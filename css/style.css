@@ -1,0 +1,64 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+@font-face {
+  font-family: "Blogger Sans";
+  src: url("css/fonts/Blogger_Sans.eot?") format("eot"), url("Blogger_Sans.woff") format("woff"), url("Blogger_Sans.ttf") format("truetype"), url("Blogger_Sans.svg#BloggerSans") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+body {
+  font-family: "Blogger Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 1.7;
+  color: #666; }
+
+.navigation {
+  font-size: 2.6rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px; }
+  .navigation__info-box {
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 1.4;
+    font-weight: 500; }
+
+.navigation {
+  background-color: #146b7e;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5.8rem; }
+  .navigation__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    .navigation__list-item {
+      padding: 1rem 2rem; }
+    .navigation__list .navigation-link:link,
+    .navigation__list .navigation-link:visited {
+      text-decoration: none;
+      color: #fff; }
+    .navigation__list .navigation-link--orange:link,
+    .navigation__list .navigation-link--orange:visited {
+      color: #ee7133;
+      text-decoration: none; }
+  .navigation__info-box {
+    width: 27.5rem;
+    background-color: #ee7133;
+    padding: 1rem;
+    border-radius: 2.5rem; }

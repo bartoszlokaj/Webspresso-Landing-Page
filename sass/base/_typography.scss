@@ -1,0 +1,29 @@
+@font-face {
+    font-family:"Blogger Sans";
+    src:url("css/fonts/Blogger_Sans.eot?") format("eot"),url("Blogger_Sans.woff") format("woff"),      url("Blogger_Sans.ttf") format("truetype"),url("Blogger_Sans.svg#BloggerSans") format("svg");
+    font-weight:normal;
+    font-style:normal;
+}
+
+body {
+    font-family: "Blogger Sans", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 1.7;
+    color: #666;
+  }
+
+  .navigation {
+      font-size: 2.6rem;
+      color: $color-white;
+      text-transform: uppercase;
+      font-weight: 500;
+      letter-spacing: 1px;
+
+      &__info-box {
+          text-align: center;
+          letter-spacing: 5px;
+          line-height: 1.4;
+          font-weight: 500;
+      }
+  }
