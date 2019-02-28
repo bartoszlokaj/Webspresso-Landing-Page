@@ -14,12 +14,10 @@ body {
     font-family: "Blogger Sans", sans-serif;
     font-weight: 400;
     font-size: 2rem;
-    line-height: 1.7;
     color: $color-white;
   }
 
   .navigation {
-      font-size: 2.6rem;
       color: $color-white;
       text-transform: uppercase;
       font-weight: 500;
@@ -40,10 +38,13 @@ body {
   }
 
   .header-primary {
+    &--top {
     font-size: 7.2rem;
-    font-weight: medium;
+    text-transform: uppercase;
+    margin: 0;
+    }
 
-    &--fat {
-      font-size: 19.4rem;
+    &--bottom {
+      font-size: 17rem;
     }
   }

@@ -21,11 +21,9 @@ body {
   font-family: "Blogger Sans", sans-serif;
   font-weight: 400;
   font-size: 2rem;
-  line-height: 1.7;
   color: #fff; }
 
 .navigation {
-  font-size: 2.6rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
@@ -41,11 +39,13 @@ body {
   color: #fff;
   text-decoration: none; }
 
-.header-primary {
+.header-primary--top {
   font-size: 7.2rem;
-  font-weight: medium; }
-  .header-primary--fat {
-    font-size: 19.4rem; }
+  text-transform: uppercase;
+  margin: 0; }
+
+.header-primary--bottom {
+  font-size: 17rem; }
 
 .header {
   background-image: url(../img/header-background.jpg);
@@ -53,34 +53,42 @@ body {
   background-size: cover;
   padding: 5rem;
   height: 100vh; }
-
-.navigation {
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 190rem; }
-  .navigation__logo-box {
-    margin-top: 1.6rem; }
-  .navigation__list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  .header .navigation {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around; }
-  .navigation__item {
-    margin-right: 2rem; }
-  .navigation__link {
-    padding: 1rem 2rem; }
-  .navigation__link:hover, .navigation__link:active {
-    color: #ee7133; }
-  .navigation__info-box {
-    width: 27.5rem;
-    background-color: #ee7133;
-    padding: 1rem;
-    border-radius: 2.5rem; }
-  .navigation__socials--facebook {
-    margin-left: 2.5rem;
-    height: 2rem; }
-    .navigation__socials--facebook .logo-facebook {
-      height: 2.5rem; }
+    justify-content: space-around;
+    align-items: center;
+    max-width: 190rem; }
+    .header .navigation__logo-box {
+      margin-top: 1.6rem; }
+    .header .navigation__list {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around; }
+    .header .navigation__item {
+      margin-right: 2rem; }
+    .header .navigation__link {
+      padding: 1rem 2rem; }
+    .header .navigation__link:hover, .header .navigation__link:active {
+      color: #ee7133; }
+    .header .navigation__info-box {
+      width: 27.5rem;
+      background-color: #ee7133;
+      padding: 1rem;
+      border-radius: 2.5rem; }
+    .header .navigation__socials--facebook {
+      margin-left: 2.5rem;
+      height: 2rem; }
+      .header .navigation__socials--facebook .logo-facebook {
+        height: 2.5rem; }
+  .header .main-header {
+    margin: 30rem auto 0 auto;
+    width: 119rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .header .main-header__text-box {
+      margin-left: 3rem;
+      max-width: 50%; }
