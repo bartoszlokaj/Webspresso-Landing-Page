@@ -1,13 +1,12 @@
 .header {
     background-color: $color-primary-blue;
-
+    padding: 5rem;
 }
 
 .navigation {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 5.8rem;
 
     &__list {
         list-style-type: none;
@@ -15,22 +14,15 @@
         padding: 0;
        
         display: flex;
-        
-        &-item {
-            padding: 1rem 2rem;
-        }
-        
-        .navigation-link:link,
-        .navigation-link:visited {
-            text-decoration: none;
-            color: $color-white;
-        }
+    }
 
-        .navigation-link--orange:link,
-        .navigation-link--orange:visited {
-            color: $color-secondary-orange;
-            text-decoration: none;
-        }
+    &__item {
+        padding: 1rem 2rem;
+    }
+
+    .link-nav:hover,
+    .link-nav:active {
+        color: $color-secondary-orange;
     }
 
     &__info-box {
