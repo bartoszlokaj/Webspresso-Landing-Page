@@ -1,9 +1,14 @@
+
 @font-face {
     font-family:"Blogger Sans";
-    src:url("css/fonts/Blogger_Sans.eot?") format("eot"),url("Blogger_Sans.woff") format("woff"),      url("Blogger_Sans.ttf") format("truetype"),url("Blogger_Sans.svg#BloggerSans") format("svg");
+    src:url("Blogger_Sans.eot?") format("eot"),
+        url("Blogger_Sans.woff") format("woff"),
+        url("Blogger_Sans.ttf") format("truetype"),
+        url("Blogger_Sans.svg#BloggerSans") format("svg");
     font-weight:normal;
     font-style:normal;
 }
+
 
 body {
     font-family: "Blogger Sans", sans-serif;
