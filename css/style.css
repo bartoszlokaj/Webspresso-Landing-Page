@@ -22,7 +22,7 @@ body {
   font-weight: 400;
   font-size: 2rem;
   line-height: 1.7;
-  color: #666; }
+  color: #fff; }
 
 .navigation {
   font-size: 2.6rem;
@@ -40,6 +40,12 @@ body {
 .link:visited {
   color: #fff;
   text-decoration: none; }
+
+.header-primary {
+  font-size: 7.2rem;
+  font-weight: medium; }
+  .header-primary--fat {
+    font-size: 19.4rem; }
 
 .header {
   background-image: url(../img/header-background.jpg);
@@ -60,7 +66,10 @@ body {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; }
+    display: flex;
+    justify-content: space-around; }
+  .navigation__item {
+    margin-right: 2rem; }
   .navigation__link {
     padding: 1rem 2rem; }
   .navigation__link:hover, .navigation__link:active {

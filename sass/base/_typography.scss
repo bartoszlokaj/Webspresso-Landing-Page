@@ -15,7 +15,7 @@ body {
     font-weight: 400;
     font-size: 2rem;
     line-height: 1.7;
-    color: #666;
+    color: $color-white;
   }
 
   .navigation {
@@ -37,4 +37,13 @@ body {
   .link:visited {
       color: $color-white;
       text-decoration: none;
+  }
+
+  .header-primary {
+    font-size: 7.2rem;
+    font-weight: medium;
+
+    &--fat {
+      font-size: 19.4rem;
+    }
   }
