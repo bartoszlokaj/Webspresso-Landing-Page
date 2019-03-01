@@ -12,27 +12,32 @@ body {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: "Blogger Sans";
-  src: url("Blogger_Sans.eot?") format("eot"), url("Blogger_Sans.woff") format("woff"), url("Blogger_Sans.ttf") format("truetype"), url("Blogger_Sans.svg#BloggerSans") format("svg");
+  font-family: 'BloggerSans';
+  src: url("fonts/BloggerSans.eot");
+  /* IE9 Compat Modes */
+  src: url("fonts/BloggerSans.eot?#iefix") format("embedded-opentype"), url("fonts/BloggerSans.woff") format("woff"), url("fonts/BloggerSans.ttf") format("truetype"), url("fonts/BloggerSans.svg#BloggerSans") format("svg");
+  /* Legacy iOS */
+  font-style: normal;
   font-weight: normal;
-  font-style: normal; }
+  text-rendering: optimizeLegibility; }
 
 body {
-  font-family: "Blogger Sans", sans-serif;
+  font-family: "BloggerSans", sans-serif;
   font-weight: 400;
   font-size: 2rem;
   color: #fff; }
 
-.navigation {
+.header__navigation {
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px; }
-  .navigation__info-box {
-    text-align: center;
-    letter-spacing: 5px;
-    line-height: 1.4;
-    font-weight: 500; }
+
+.header__info-box {
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 1.4;
+  font-weight: 500; }
 
 .link:link,
 .link:visited {
@@ -47,41 +52,71 @@ body {
 .header-primary--bottom {
   font-size: 17rem; }
 
+.btn, .btn:link, .btn:visited {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: inline-block;
+  cursor: pointer; }
+
+.btn--big {
+  border-radius: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.6; }
+
+.btn--orange {
+  background-color: #ee7133; }
+
+.link, .link:link, .link:visited {
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 3px;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: inline-block;
+  cursor: pointer;
+  transition: all .3s; }
+  .link:hover, .link:link:hover, .link:visited:hover {
+    color: #ee7133; }
+
 .header {
   background-image: url(../img/header-background.jpg);
-  background-repeat: no-repeat;
-  padding: 5rem;
-  height: 80vh; }
-  .header .navigation {
+  background-size: cover;
+  padding: 3rem;
+  height: 127.1rem; }
+  .header__top-bar {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 190rem; }
-    .header .navigation__logo-box {
-      margin-top: 1.6rem; }
-    .header .navigation__list {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      justify-content: space-around; }
-    .header .navigation__item {
-      margin-right: 2rem; }
-    .header .navigation__link {
-      padding: 1rem 2rem; }
-    .header .navigation__link:hover, .header .navigation__link:active {
-      color: #ee7133; }
-    .header .navigation__info-box {
-      width: 27.5rem;
-      background-color: #ee7133;
-      padding: 1rem;
-      border-radius: 2.5rem; }
-    .header .navigation__socials--facebook {
-      margin-left: 2.5rem;
-      height: 2rem; }
-      .header .navigation__socials--facebook .logo-facebook {
-        height: 2.5rem; }
+  .header__logo-box {
+    margin-top: 1.6rem; }
+  .header__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around; }
+  .header__list-item {
+    margin-right: 2rem; }
+  .header__link:hover, .header__link:active {
+    color: #ee7133; }
+  .header__info-box {
+    width: 27.5rem;
+    background-color: #ee7133;
+    padding: 1rem;
+    border-radius: 2.5rem; }
+  .header__socials--facebook {
+    margin-left: 2.5rem;
+    height: 2rem; }
+    .header__socials--facebook .logo-facebook {
+      height: 2.5rem; }
   .header .main-header {
     margin: 30rem auto 0 auto;
     width: 119rem;
@@ -91,3 +126,6 @@ body {
     .header .main-header__text-box {
       margin-left: 3rem;
       max-width: 50%; }
+
+.dupa {
+  height: 60vh; }

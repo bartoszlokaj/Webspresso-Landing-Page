@@ -1,0 +1,25 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: $color-white;
+    padding: 1rem 2rem;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  &--big {
+    border-radius: 2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.6;
+  }
+
+  &--orange {
+    background-color: $color-secondary-orange;
+  }
+}

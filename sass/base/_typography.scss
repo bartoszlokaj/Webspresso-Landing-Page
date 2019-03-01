@@ -1,43 +1,64 @@
+// @font-face {
+//     font-family:"Blogger Sans";
+//     src:url("Blogger_Sans.eot") format("eot"),
+//         url("Blogger_Sans.woff") format("woff"),
+//         url("Blogger_Sans.ttf") format("truetype"),
+//         url("Blogger_Sans.svg") format("svg");
+//     font-weight:normal;
+//     font-style:normal;
+// }
+
+// @font-face {
+//     font-family:"Blogger Sans";
+//     src: url("fonts/Blogger_Sans.woff"),
+//          url("fonts/Blogger_Sans.eot"),
+//          url("fonts/Blogger_Sans.ttf"),
+//          url("fonts/Blogger_Sans.svg");
+//     font-weight:normal;
+//     font-style:normal;
+// }
 
 @font-face {
-    font-family:"Blogger Sans";
-    src:url("Blogger_Sans.eot?") format("eot"),
-        url("Blogger_Sans.woff") format("woff"),
-        url("Blogger_Sans.ttf") format("truetype"),
-        url("Blogger_Sans.svg#BloggerSans") format("svg");
-    font-weight:normal;
-    font-style:normal;
+    font-family: 'BloggerSans';
+    src: url('fonts/BloggerSans.eot'); /* IE9 Compat Modes */
+    src: url('fonts/BloggerSans.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/BloggerSans.woff') format('woff'), /* Modern Browsers */
+         url('fonts/BloggerSans.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/BloggerSans.svg#BloggerSans') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
 }
 
-
 body {
-    font-family: "Blogger Sans", sans-serif;
+    font-family: "BloggerSans", sans-serif;
     font-weight: 400;
     font-size: 2rem;
     color: $color-white;
-  }
+}
 
-  .navigation {
-      color: $color-white;
-      text-transform: uppercase;
-      font-weight: 500;
-      letter-spacing: 1px;
+.header__navigation {
+    color: $color-white;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+      
+}
+    
+.header__info-box {
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 1.4;
+    font-weight: 500;
+}
 
-      &__info-box {
-          text-align: center;
-          letter-spacing: 5px;
-          line-height: 1.4;
-          font-weight: 500;
-      }
-  }
+.link:link,
+.link:visited {
+    color: $color-white;
+    text-decoration: none;
+}
 
-  .link:link,
-  .link:visited {
-      color: $color-white;
-      text-decoration: none;
-  }
-
-  .header-primary {
+.header-primary {
     &--top {
     font-size: 7.2rem;
     text-transform: uppercase;
@@ -45,6 +66,6 @@ body {
     }
 
     &--bottom {
-      font-size: 17rem;
+        font-size: 17rem;
     }
-  }
+}
