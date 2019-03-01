@@ -52,7 +52,7 @@ body {
 .header-primary--bottom {
   font-size: 17rem; }
 
-.btn, .btn:link, .btn:visited {
+.btn:link, .btn:visited {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -71,7 +71,7 @@ body {
 .btn--orange {
   background-color: #ee7133; }
 
-.link, .link:link, .link:visited {
+.link:link, .link:visited {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
@@ -81,7 +81,7 @@ body {
   display: inline-block;
   cursor: pointer;
   transition: all .3s; }
-  .link:hover, .link:link:hover, .link:visited:hover {
+  .link:link:hover, .link:visited:hover {
     color: #ee7133; }
 
 .header {
@@ -105,7 +105,17 @@ body {
     justify-content: space-around; }
   .header__list-item {
     margin-right: 2rem; }
-  .header__link:hover, .header__link:active {
+  .header__list-link:link, .header__list-link:visited {
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 3px;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s; }
+  .header__list-link:hover {
     color: #ee7133; }
   .header__info-box {
     width: 27.5rem;
