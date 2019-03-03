@@ -112,15 +112,6 @@ body {
     height: 2rem; }
     .header__socials--facebook .logo-facebook {
       height: 2.5rem; }
-  .header .main-header {
-    margin: 30rem auto 0 auto;
-    width: 119rem;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .header .main-header__text-box {
-      margin-left: 3rem;
-      max-width: 50%; }
 
 .dupa {
   height: 60vh; }
