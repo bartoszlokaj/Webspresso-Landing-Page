@@ -1,0 +1,62 @@
+.header {
+  background-image: url(../img/header-background.jpg);
+  background-size: cover;
+  font-weight: bold;
+  padding: 3.8rem 4.5rem;
+  height: 127.1rem;
+
+  &__top-bar {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 190rem;
+  }
+
+  &__logo-box {
+    margin-top: .6rem;
+  }
+
+  &__list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__list-link {
+    &:link,
+    &:visited {
+      font-weight: 600;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 2px;
+      color: $color-white;
+      padding: 1rem 1.6rem;
+      display: inline-block;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    &:hover {
+      color: $color-secondary-orange;
+    }
+  }
+
+  &__info-box {
+    width: 27.5rem;
+    background-color: $color-secondary-orange;
+    padding: 1rem;
+    border-radius: 2.5rem;
+  }
+
+  &__socials--facebook {
+    margin-left: 2.5rem;
+    height: 2rem;
+
+    .logo-facebook {
+      height: 2.5rem;
+    }
+  }
+}
