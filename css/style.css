@@ -24,7 +24,7 @@ body {
 body {
   font-family: "BloggerSans", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
+  font-size: 2.6rem;
   color: #fff; }
 
 .header__navigation {
@@ -32,12 +32,6 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 1px; }
-
-.header__info-box {
-  text-align: center;
-  letter-spacing: 5px;
-  line-height: 1.4;
-  font-weight: 500; }
 
 .link:link,
 .link:visited {
@@ -56,7 +50,8 @@ body {
   font-weight: 600;
   text-transform: uppercase;
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  line-height: 1.3;
   color: #fff;
   padding: 1rem 2rem;
   display: inline-block;
@@ -71,23 +66,11 @@ body {
 .btn--orange {
   background-color: #ee7133; }
 
-.link:link, .link:visited {
-  font-weight: 600;
-  text-transform: uppercase;
-  text-decoration: none;
-  letter-spacing: 3px;
-  color: #fff;
-  padding: 1rem 2rem;
-  display: inline-block;
-  cursor: pointer;
-  transition: all .3s; }
-  .link:link:hover, .link:visited:hover {
-    color: #ee7133; }
-
 .header {
   background-image: url(../img/header-background.jpg);
   background-size: cover;
-  padding: 3rem;
+  font-weight: bold;
+  padding: 3.8rem 4.5rem;
   height: 127.1rem; }
   .header__top-bar {
     margin: 0 auto;
@@ -96,22 +79,20 @@ body {
     align-items: center;
     max-width: 190rem; }
   .header__logo-box {
-    margin-top: 1.6rem; }
+    margin-top: .6rem; }
   .header__list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: space-around; }
-  .header__list-item {
-    margin-right: 2rem; }
   .header__list-link:link, .header__list-link:visited {
     font-weight: 600;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     color: #fff;
-    padding: 1rem 2rem;
+    padding: 1rem 1.6rem;
     display: inline-block;
     cursor: pointer;
     transition: all 0.3s; }
