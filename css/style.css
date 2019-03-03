@@ -33,11 +33,6 @@ body {
   font-weight: 500;
   letter-spacing: 1px; }
 
-.link:link,
-.link:visited {
-  color: #fff;
-  text-decoration: none; }
-
 .header-primary--top {
   font-size: 7.2rem;
   text-transform: uppercase;
