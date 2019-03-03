@@ -12,7 +12,7 @@ body {
   box-sizing: border-box; }
 
 @font-face {
-  font-family: 'BloggerSans';
+  font-family: "BloggerSans";
   src: url("fonts/BloggerSans.eot");
   /* IE9 Compat Modes */
   src: url("fonts/BloggerSans.eot?#iefix") format("embedded-opentype"), url("fonts/BloggerSans.woff") format("woff"), url("fonts/BloggerSans.ttf") format("truetype"), url("fonts/BloggerSans.svg#BloggerSans") format("svg");
@@ -33,13 +33,22 @@ body {
   font-weight: 500;
   letter-spacing: 1px; }
 
-.header-primary--top {
-  font-size: 7.2rem;
-  text-transform: uppercase;
-  margin: 0; }
-
-.header-primary--bottom {
-  font-size: 17rem; }
+.main-header {
+  margin: 30rem auto 0 auto;
+  width: 119rem;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .main-header__text-box {
+    margin-left: 3rem;
+    max-width: 50%; }
+  .main-header__header-primary--top {
+    font-size: 7.2rem;
+    font-weight: medium;
+    text-transform: uppercase;
+    margin: 0; }
+  .main-header__header-primary--bottom {
+    font-size: 19.4rem; }
 
 .btn:link, .btn:visited {
   font-weight: 600;
