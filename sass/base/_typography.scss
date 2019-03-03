@@ -32,15 +32,25 @@ body {
   justify-content: center;
   align-items: center;
 
+  &__header-logo {
+    margin-bottom: 8rem;
+    margin-left: 7rem;
+  }
+
   &__text-box {
     margin-left: 3rem;
     max-width: 50%;
   }
 
   &__header-primary {
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 2px;
+
     &--top {
       font-size: 7.2rem;
       font-weight: medium;
+      line-height: 1.2;
       text-transform: uppercase;
       margin: 0;
     }
