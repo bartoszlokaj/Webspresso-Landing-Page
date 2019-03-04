@@ -40,11 +40,19 @@
     background-color: $color-secondary-orange;
     border: 3px solid transparent;
     transition: all 0.2s;
+    position: relative;
 
     &:hover {
       background-color: $color-white;
       color: $color-secondary-orange;
       border: 3px solid $color-secondary-orange;
+    }
+
+    @include respond(tab-land) {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

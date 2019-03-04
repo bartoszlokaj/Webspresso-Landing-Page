@@ -122,11 +122,18 @@ body {
 .btn--orange {
   background-color: #ee7133;
   border: 3px solid transparent;
-  transition: all 0.2s; }
+  transition: all 0.2s;
+  position: relative; }
   .btn--orange:hover {
     background-color: #fff;
     color: #ee7133;
     border: 3px solid #ee7133; }
+  @media (max-width: 75em) {
+    .btn--orange {
+      position: absolute;
+      top: 90%;
+      left: 50%;
+      transform: translate(-50%, -50%); } }
 
 .header {
   background-image: url(../img/header-background.jpg);
