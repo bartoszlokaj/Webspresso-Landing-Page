@@ -3,7 +3,8 @@
 360-600px:    Phablet
 600-900px:    Tablet portrait
 900-1200px:   Tablet landscape
-1200-1800px:  is where normal styles apply
+1200-1400px:  Laptop
+1440-1800px:  is where normal styles apply
 1800px +:     Big desktop
 $breakpoint choices:
 -phone
