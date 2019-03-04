@@ -36,9 +36,10 @@ body {
     flex-direction: column;
   }
 
-  &__header-logo {
-    margin-bottom: 8rem;
-    margin-left: 7rem;
+  &__logo-img {
+    @include respond(laptop) {
+      height: 35rem;
+    }
   }
 
   &__text-box {
