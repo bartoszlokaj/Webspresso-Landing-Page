@@ -23,18 +23,23 @@
     text-align: center;
     letter-spacing: 2px;
     line-height: 1.6;
-    transition: all 0.3s;
+    transition: all 0.2s;
 
     &:hover {
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
       transform: translateY(-0.5rem);
+    }
+
+    &:active {
+      box-shadow: 0 0.2rem .5rem rgba($color-black, 0.5);
+      transform: translateY(-0.2rem);
     }
   }
 
   &--orange {
     background-color: $color-secondary-orange;
     border: 3px solid transparent;
-    transition: all 0.3s;
+    transition: all 0.2s;
 
     &:hover {
       background-color: $color-white;

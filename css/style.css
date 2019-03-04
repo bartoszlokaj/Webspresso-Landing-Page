@@ -77,15 +77,18 @@ body {
   text-align: center;
   letter-spacing: 2px;
   line-height: 1.6;
-  transition: all 0.3s; }
+  transition: all 0.2s; }
   .btn--big:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
     transform: translateY(-0.5rem); }
+  .btn--big:active {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+    transform: translateY(-0.2rem); }
 
 .btn--orange {
   background-color: #ee7133;
   border: 3px solid transparent;
-  transition: all 0.3s; }
+  transition: all 0.2s; }
   .btn--orange:hover {
     background-color: #fff;
     color: #ee7133;
