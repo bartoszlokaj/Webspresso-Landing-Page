@@ -1,9 +1,21 @@
 .header {
   background-image: url(../img/header-background.jpg);
   background-size: cover;
+  background-position: center;
   font-weight: bold;
   padding: 3.8rem 4.5rem;
   height: 127.1rem;
+
+  @include respond(phone) {
+    background-image: url(../img/header-background-small.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+
+  @include respond(tab-land) {
+    font-size: $default-font-size;
+    padding: 2rem 2rem;
+  }
 
   &__top-bar {
     margin: 0 auto;
@@ -11,6 +23,12 @@
     justify-content: space-around;
     align-items: center;
     max-width: 190rem;
+  }
+
+  &__logo-img {
+    @include respond(tab-land) {
+      height: 5rem;
+    }
   }
 
   &__logo-box {
@@ -24,6 +42,10 @@
 
     display: flex;
     justify-content: space-around;
+
+    @include respond(phablet) {
+      display: none;
+    }
   }
 
   &__list-link {

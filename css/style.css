@@ -22,10 +22,7 @@ $breakpoint choices:
 
 html {
   font-size: 62.5%; }
-  @media (max-width: 75em) {
-    html {
-      font-size: 56.25%; } }
-  @media (max-width: 56.25em) {
+  @media (max-width: 87.5em) {
     html {
       font-size: 50%; } }
   @media (max-width: 37.5em) {
@@ -66,6 +63,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media (max-width: 37.5em) {
+    .main-header {
+      flex-direction: column; } }
   .main-header__header-logo {
     margin-bottom: 8rem;
     margin-left: 7rem; }
@@ -124,15 +124,28 @@ body {
 .header {
   background-image: url(../img/header-background.jpg);
   background-size: cover;
+  background-position: center;
   font-weight: bold;
   padding: 3.8rem 4.5rem;
   height: 127.1rem; }
+  @media (max-width: 22.5em) {
+    .header {
+      background-image: url(../img/header-background-small.jpg);
+      background-size: cover;
+      background-position: center; } }
+  @media (max-width: 75em) {
+    .header {
+      font-size: 1.6rem;
+      padding: 2rem 2rem; } }
   .header__top-bar {
     margin: 0 auto;
     display: flex;
     justify-content: space-around;
     align-items: center;
     max-width: 190rem; }
+  @media (max-width: 75em) {
+    .header__logo-img {
+      height: 5rem; } }
   .header__logo-box {
     margin-top: 0.6rem; }
   .header__list {
@@ -141,6 +154,9 @@ body {
     padding: 0;
     display: flex;
     justify-content: space-around; }
+    @media (max-width: 37.5em) {
+      .header__list {
+        display: none; } }
   .header__list-link:link, .header__list-link:visited {
     font-weight: 600;
     text-transform: uppercase;
