@@ -50,6 +50,7 @@ body {
     display: flex;
     flex-direction: column;
     letter-spacing: 2px;
+    max-width: 50rem;
 
     &--top {
       font-size: 7.2rem;
@@ -57,10 +58,18 @@ body {
       line-height: 1.2;
       text-transform: uppercase;
       margin: 0;
+
+      @include respond(phone) {
+        font-size: 4.5rem;
+      }
     }
 
     &--bottom {
       font-size: 19.4rem;
+
+      @include respond(phone) {
+        font-size: 12rem;
+      }
     }
   }
 }

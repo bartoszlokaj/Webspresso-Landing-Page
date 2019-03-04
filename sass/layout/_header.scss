@@ -12,9 +12,9 @@
     background-position: center;
   }
 
-  @include respond(tab-land) {
-    font-size: $default-font-size;
-    padding: 2rem 2rem;
+  @include respond(laptop) {
+    font-size: 2.5rem;
+    padding: 2.5rem 2rem;
   }
 
   &__top-bar {
