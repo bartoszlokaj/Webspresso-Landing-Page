@@ -64,6 +64,10 @@
     &:hover {
       color: $color-secondary-orange;
     }
+
+    @include respond(laptop) {
+      padding: 1rem .6rem;
+    }
   }
 
   &__info-box {

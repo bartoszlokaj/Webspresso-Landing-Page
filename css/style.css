@@ -183,6 +183,9 @@ body {
     transition: all 0.3s; }
   .header__list-link:hover {
     color: #ee7133; }
+  @media (max-width: 90em) {
+    .header__list-link {
+      padding: 1rem .6rem; } }
   .header__info-box {
     width: 27.5rem;
     background-color: #ee7133;
