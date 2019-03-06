@@ -145,6 +145,21 @@ body {
       left: 50%;
       transform: translate(-50%, -50%); } }
 
+.about-icon {
+  width: 37rem; }
+  .about-icon__img {
+    padding: 5rem 7rem;
+    display: flex;
+    align-content: center;
+    justify-content: center; }
+  .about-icon__text {
+    color: #82358b;
+    text-align: center;
+    line-height: 1.4;
+    padding: 2.4rem; }
+    .about-icon__text--blue {
+      color: #04859f; }
+
 .header {
   background-image: url(../img/header-background.jpg);
   background-size: cover;
@@ -206,6 +221,12 @@ body {
     height: 2rem; }
     .header__socials--facebook .logo-facebook {
       height: 2.5rem; }
+
+.about {
+  background-color: #f4f4f4; }
+
+.row {
+  display: flex; }
 
 .dupa {
   height: 60vh; }

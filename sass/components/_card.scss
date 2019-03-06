@@ -1,0 +1,21 @@
+.about-icon {
+  width: 37rem;
+
+  &__img {
+    padding: 5rem 7rem;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  &__text {
+    color: $color-tertiary-purple;
+    text-align: center;
+    line-height: 1.4;
+    padding: 2.4rem;
+
+    &--blue {
+      color: $color-primary-blue;
+    }
+  }
+}
