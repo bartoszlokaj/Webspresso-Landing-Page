@@ -1,7 +1,10 @@
-.about {
-  background-color: $color-light-gray;
-}
-
 .row {
   display: flex;
+  justify-content: center;
+  align-items: baseline;
+  flex-wrap: wrap;
+
+  &:last-child {
+    margin-bottom: 18.6rem;
+  }
 }
