@@ -93,6 +93,15 @@ body {
         .main-header__header-primary--bottom {
           font-size: 12rem; } }
 
+.header-secondary {
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50%;
+  margin: 3rem auto; }
+  .header-secondary--purple {
+    color: #82358b; }
+
 .btn:link, .btn:visited {
   font-weight: 600;
   text-transform: uppercase;
@@ -179,7 +188,7 @@ body {
     letter-spacing: 2px;
     color: #fff;
     padding: 1rem 1.6rem;
-    display: inline-block;
+    display: block;
     cursor: pointer;
     transition: all 0.3s; }
   .header__list-link:hover {

@@ -74,3 +74,15 @@ body {
     }
   }
 }
+
+.header-secondary {
+  font-size: 7.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50%;
+  margin: 3rem auto;
+
+  &--purple {
+    color: $color-tertiary-purple;
+  }
+}
