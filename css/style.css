@@ -98,7 +98,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 50%;
-  margin: 16rem auto; }
+  margin: 16rem auto 9rem auto; }
   .header-secondary--purple {
     color: #82358b; }
 
@@ -222,13 +222,19 @@ body {
     .header__socials--facebook .logo-facebook {
       height: 2.5rem; }
 
-.row {
+.about__row {
   display: flex;
   justify-content: center;
   align-items: baseline;
   flex-wrap: wrap; }
-  .row:last-child {
+  .about__row:last-child {
     margin-bottom: 18.6rem; }
+
+.about__arrow {
+  position: absolute; }
+  .about__arrow--1 {
+    top: 196%;
+    left: 38%; }
 
 .dupa {
   height: 60vh; }

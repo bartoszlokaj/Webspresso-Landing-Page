@@ -1,10 +1,22 @@
-.row {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
+.about {
+  
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    
+    &:last-child {
+      margin-bottom: 18.6rem;
+    }
+  }
 
-  &:last-child {
-    margin-bottom: 18.6rem;
+  &__arrow {
+    position: absolute;
+
+    &--1 {
+      top: 196%;
+      left: 38%;
+    }
   }
 }
