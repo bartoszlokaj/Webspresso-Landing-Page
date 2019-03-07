@@ -1,6 +1,7 @@
 .about-icon {
   width: 37rem;
   height: 39.5rem;
+  padding-bottom: 1rem;
   transition: all .2s ease-in;
   position: relative;
   
@@ -22,8 +23,12 @@
   &:hover {
     cursor: pointer;
     transform: scale(1.03);
-    background-color: $color-light-gray-2;
+    background-color: $color-white;
     box-shadow: 0 0 2rem rgba($color-black, .3);
+  }
+
+  &:hover::after {
+    animation: moveInRight 1.8s .2s;
   }
 
   &__img-box {
