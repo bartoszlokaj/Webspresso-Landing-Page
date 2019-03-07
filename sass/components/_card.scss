@@ -13,8 +13,12 @@
     &::after {
       content: url(../../img/section_about/about-section-arrow.png);
       position: absolute;
-      top: 50%;
-      right: 0;
+      top: 45%;
+      right: -7%;
+
+      @include respond(tab-port) {
+        display: none;
+      }
     }
   }
 
