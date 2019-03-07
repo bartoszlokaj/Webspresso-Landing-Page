@@ -27,14 +27,11 @@ body {
 
 .main-header {
   margin: 30rem auto 0 auto;
-  width: 119rem;
+  max-width: 119rem;
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @include respond(phablet) {
-    flex-direction: column;
-  }
+  flex-wrap: wrap;
 
   &__logo-img {
     @include respond(laptop) {
