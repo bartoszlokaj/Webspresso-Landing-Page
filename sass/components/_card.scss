@@ -1,11 +1,26 @@
 .about-icon {
   width: 37rem;
 
-  &__img {
-    padding: 5rem 7rem;
+  &__img-box {
+    width: 37rem;
+    height: 28rem;
+    // padding: 5rem 7rem;
     display: flex;
     align-content: center;
     justify-content: center;
+    position: relative;
+
+    &::after {
+      content: url(../../img/section_about/about-section-arrow.png);
+      position: absolute;
+      top: 50%;
+      right: 0;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    @include absoluteCenter;
   }
 
   &__text {

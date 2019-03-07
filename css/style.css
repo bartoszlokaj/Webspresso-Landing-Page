@@ -147,11 +147,24 @@ body {
 
 .about-icon {
   width: 37rem; }
-  .about-icon__img {
-    padding: 5rem 7rem;
+  .about-icon__img-box {
+    width: 37rem;
+    height: 28rem;
     display: flex;
     align-content: center;
-    justify-content: center; }
+    justify-content: center;
+    position: relative; }
+    .about-icon__img-box::after {
+      content: url(../../img/section_about/about-section-arrow.png);
+      position: absolute;
+      top: 50%;
+      right: 0; }
+  .about-icon__img {
+    position: absolute;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
   .about-icon__text {
     color: #82358b;
     text-align: center;
@@ -229,12 +242,6 @@ body {
   flex-wrap: wrap; }
   .about__row:last-child {
     margin-bottom: 18.6rem; }
-
-.about__arrow {
-  position: absolute; }
-  .about__arrow--1 {
-    top: 196%;
-    left: 38%; }
 
 .dupa {
   height: 60vh; }
