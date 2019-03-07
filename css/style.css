@@ -146,7 +146,14 @@ body {
       transform: translate(-50%, -50%); } }
 
 .about-icon {
-  width: 37rem; }
+  width: 37rem;
+  height: 39.5rem;
+  transition: all .2s ease-in; }
+  .about-icon:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    background-color: #f2f2f2;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3); }
   .about-icon__img-box {
     width: 37rem;
     height: 25rem;
@@ -154,11 +161,7 @@ body {
     align-content: center;
     justify-content: center;
     position: relative;
-    border-radius: 2px;
-    transition: all .2s ease-in; }
-    .about-icon__img-box:hover {
-      cursor: pointer;
-      transform: scale(1.05); }
+    border-radius: 2px; }
     .about-icon__img-box::after {
       content: url(../../img/section_about/about-section-arrow.png);
       position: absolute;
