@@ -20,6 +20,13 @@
         display: none;
       }
     }
+    &--last::after {
+      content: "";
+    }
+
+    &--last::after {
+      content: "";
+    }
   }
 
   &__img {

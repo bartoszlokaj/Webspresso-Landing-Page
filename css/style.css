@@ -162,6 +162,10 @@ body {
       @media (max-width: 56.25em) {
         .about-icon__img-box::after {
           display: none; } }
+    .about-icon__img-box--last::after {
+      content: ""; }
+    .about-icon__img-box--last::after {
+      content: ""; }
   .about-icon__img {
     position: absolute;
     position: absolute;
