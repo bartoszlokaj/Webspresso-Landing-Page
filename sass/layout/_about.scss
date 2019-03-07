@@ -5,9 +5,10 @@
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
+    margin-top: $margin-small;
     
     &:last-child {
-      margin-bottom: 18.6rem;
+      margin-bottom: $margin-big;
     }
   }
 }

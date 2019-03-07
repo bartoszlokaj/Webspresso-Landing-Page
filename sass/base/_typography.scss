@@ -80,7 +80,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   width: 50%;
-  margin: 16rem auto 9rem auto;
+  margin: $margin-big auto 0 auto;
 
   &--purple {
     color: $color-tertiary-purple;

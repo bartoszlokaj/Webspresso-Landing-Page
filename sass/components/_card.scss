@@ -9,6 +9,13 @@
     align-content: center;
     justify-content: center;
     position: relative;
+    border-radius: 2px;
+    transition: all .2s ease-in;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.05);
+    }
 
     &::after {
       content: url(../../img/section_about/about-section-arrow.png);
@@ -22,6 +29,11 @@
     }
     &--last::after {
       content: "";
+      transition: transform .2s ease-in;
+
+      &:hover {
+        transform: translateX(-3px);
+      }
     }
 
     &--last::after {
@@ -30,7 +42,6 @@
   }
 
   &__img {
-    position: absolute;
     @include absoluteCenter;
   }
 
@@ -42,6 +53,11 @@
 
     &--blue {
       color: $color-primary-blue;
+      display: inline-block;
+    }
+
+    &--purple {
+      display: inline-block;
     }
   }
 }
