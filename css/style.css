@@ -149,7 +149,7 @@ body {
   width: 37rem; }
   .about-icon__img-box {
     width: 37rem;
-    height: 28rem;
+    height: 25rem;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -176,7 +176,7 @@ body {
     color: #82358b;
     text-align: center;
     line-height: 1.4;
-    padding: 2.4rem; }
+    padding: 0 2.4rem; }
     .about-icon__text--blue {
       color: #04859f; }
 
