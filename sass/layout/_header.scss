@@ -1,5 +1,5 @@
 .header {
-  background-image: url(../img/header-background.jpg);
+  background-image: url(../img/background/header-background.jpg);
   background-size: cover;
   background-position: center;
   font-weight: bold;
@@ -7,7 +7,7 @@
   height: 127.1rem;
 
   @include respond(phone) {
-    background-image: url(../img/header-background-small.jpg);
+    background-image: url(../img/background/header-background-small.jpg);
     background-size: cover;
     background-position: center;
   }
