@@ -4,6 +4,11 @@
   padding-bottom: 1rem;
   transition: all .2s ease-in;
   position: relative;
+  font-size: 25px;
+
+  @include respond(tab-port) {
+    height: 44rem;
+  }
   
   &::after {
     content: url(../../img/section_about/about-section-arrow.png);
