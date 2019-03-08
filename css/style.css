@@ -84,8 +84,13 @@ body {
   @media (max-width: 56.25em) {
     .main-header__logo-img {
       margin-left: 10rem; } }
+  @media (max-width: 26.6em) {
+    .main-header__logo-img {
+      margin-left: 6rem;
+      height: 26.6rem; } }
   .main-header__text-box {
-    margin-left: 3rem; }
+    margin-left: 3rem;
+    text-align: center; }
   .main-header__header-primary {
     display: flex;
     flex-direction: column;
@@ -94,17 +99,26 @@ body {
     @media (max-width: 56.25em) {
       .main-header__header-primary {
         margin-top: 2rem; } }
+    @media (max-width: 26.6em) {
+      .main-header__header-primary {
+        margin-top: 4rem; } }
     .main-header__header-primary--top {
       font-size: 7.2rem;
       font-weight: medium;
       line-height: 1.2;
       text-transform: uppercase;
       margin: 0; }
+      @media (max-width: 26.6em) {
+        .main-header__header-primary--top {
+          font-size: 6rem; } }
       @media (max-width: 22.5em) {
         .main-header__header-primary--top {
           font-size: 4.5rem; } }
     .main-header__header-primary--bottom {
       font-size: 19.4rem; }
+      @media (max-width: 26.6em) {
+        .main-header__header-primary--bottom {
+          font-size: 18rem; } }
       @media (max-width: 22.5em) {
         .main-header__header-primary--bottom {
           font-size: 12rem; } }

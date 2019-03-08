@@ -45,10 +45,16 @@ body {
     @include respond(tab-port) {
       margin-left: 10rem;
     }
+
+    @include respond(phoneL) {
+      margin-left: 6rem;
+      height: 26.6rem;
+    }
   }
 
   &__text-box {
     margin-left: 3rem;
+    text-align: center;
   }
 
   &__header-primary {
@@ -61,12 +67,20 @@ body {
       margin-top: 2rem;
     }
 
+    @include respond(phoneL) {
+      margin-top: 4rem;
+    }
+
     &--top {
       font-size: 7.2rem;
       font-weight: medium;
       line-height: 1.2;
       text-transform: uppercase;
       margin: 0;
+
+      @include respond(phoneL) {
+        font-size: 6rem;
+      }
 
       @include respond(phone) {
         font-size: 4.5rem;
@@ -75,6 +89,10 @@ body {
 
     &--bottom {
       font-size: 19.4rem;
+
+      @include respond(phoneL) {
+        font-size: 18rem;
+      }
 
       @include respond(phone) {
         font-size: 12rem;
