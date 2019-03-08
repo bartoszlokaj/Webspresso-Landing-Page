@@ -204,6 +204,9 @@ body {
   @media (max-width: 56.25em) {
     .about-icon {
       height: 44rem; } }
+  @media (max-width: 37.5em) {
+    .about-icon {
+      height: 62rem; } }
   .about-icon::after {
     content: url(../../img/section_about/about-section-arrow.png);
     position: absolute;
@@ -244,6 +247,19 @@ body {
       display: inline-block; }
     .about-icon__text--purple {
       display: inline-block; }
+    @media (max-width: 37.5em) {
+      .about-icon__text--3 {
+        margin-top: 3rem; } }
+    @media (max-width: 37.5em) {
+      .about-icon__text {
+        width: 44rem; } }
+  @media (max-width: 56.25em) {
+    .about-icon--3 {
+      margin-top: 1rem; } }
+  @media (max-width: 56.25em) {
+    .about-icon--4 {
+      margin-top: -2rem;
+      margin-bottom: -5rem; } }
 
 .header {
   background-image: url(../img/background/header-background.jpg);
