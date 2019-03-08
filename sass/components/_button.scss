@@ -70,5 +70,9 @@
     @include respond(phablet) {
       top: 84%;
     }
+
+    @include respond(phone) {
+      top: 80%;
+    }
   }
 }

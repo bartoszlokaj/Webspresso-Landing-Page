@@ -77,9 +77,18 @@
     border-radius: 2.5rem;
   }
 
-  &__socials--facebook {
+  &__socials {
     margin-left: 2.5rem;
     height: 2rem;
+
+    &--link {
+      display: block;
+      transition: transform .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
 
     .logo-facebook {
       height: 2.5rem;
