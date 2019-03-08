@@ -1,10 +1,12 @@
 .fast {
-
-  &__content {
     background-image: url(../img/background/fast-background.jpg);
     background-size: cover;
     background-position: center;
     height: 111vh;
     padding-top: 4rem;
-  }
+
+    @include respond(phablet) {
+      background-image: none;
+      background-color: $color-tertiary-purple;
+    }
 }

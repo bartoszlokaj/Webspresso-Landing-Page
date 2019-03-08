@@ -140,6 +140,13 @@ body {
     text-align: left;
     margin-left: 39rem;
     margin-top: 24rem; }
+    @media (max-width: 56.25em) {
+      .header-secondary--aside {
+        margin: 24rem auto 0 auto;
+        width: 40rem; } }
+    @media (max-width: 37.5em) {
+      .header-secondary--aside {
+        margin-top: 16rem; } }
 
 .btn:link, .btn:visited {
   font-weight: 600;
@@ -287,12 +294,16 @@ body {
         flex-direction: column;
         align-items: center; } }
 
-.fast__content {
+.fast {
   background-image: url(../img/background/fast-background.jpg);
   background-size: cover;
   background-position: center;
   height: 111vh;
   padding-top: 4rem; }
+  @media (max-width: 37.5em) {
+    .fast {
+      background-image: none;
+      background-color: #82358b; } }
 
 .header {
   background-image: url(../img/background/header-background.jpg);
