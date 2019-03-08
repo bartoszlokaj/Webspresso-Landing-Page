@@ -153,6 +153,15 @@ body {
   letter-spacing: 2px;
   line-height: 1.6;
   transition: all 0.2s; }
+  @media (max-width: 26.6em) {
+    .btn--big {
+      width: 45rem; } }
+  @media (max-width: 22.5em) {
+    .btn--big {
+      width: 40rem; } }
+  @media (max-width: 20rem) {
+    .btn--big {
+      width: 36rem; } }
   .btn--big:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
     transform: translateY(-0.5rem); }
