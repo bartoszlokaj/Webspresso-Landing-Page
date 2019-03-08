@@ -89,6 +89,10 @@ body {
     .main-header__logo-img {
       margin-left: 6rem;
       height: 26.6rem; } }
+  @media (max-width: 20rem) {
+    .main-header__logo-img {
+      margin-left: 4rem;
+      height: 24.6rem; } }
   .main-header__text-box {
     margin-left: 3rem;
     text-align: center; }
