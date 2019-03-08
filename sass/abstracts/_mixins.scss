@@ -8,6 +8,7 @@
 1440-1800px:  is where normal styles apply
 1800px +:     Big desktop
 $breakpoint choices:
+-phoneS
 -phone
 -pnoneL
 -phablet
@@ -19,6 +20,10 @@ $breakpoint choices:
 */
 
 @mixin respond($breakpoint) {
+
+  @if $breakpoint == phoneS {
+    @media (max-width: 20rem) { @content };       //320px
+  }
 
   @if $breakpoint == phone {
     @media (max-width: 22.5em) { @content };      //360px
