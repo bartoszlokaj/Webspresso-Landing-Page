@@ -48,8 +48,6 @@
       border: 3px solid $color-secondary-orange;
     }
 
-    
-
     @include respond(tab-land) {
       position: absolute;
       top: 108%;

@@ -9,10 +9,12 @@
 1800px +:     Big desktop
 $breakpoint choices:
 -phone
+-pnoneL
 -phablet
 -tab-port
 -tab-land
 -big-desktop
+
 1em = 16px
 */
 
@@ -20,6 +22,10 @@ $breakpoint choices:
 
   @if $breakpoint == phone {
     @media (max-width: 22.5em) { @content };      //360px
+  }
+
+  @if $breakpoint == phoneL {
+    @media (max-width: 26.6em) { @content };      //425px
   }
 
   @if $breakpoint == phablet {
@@ -35,7 +41,7 @@ $breakpoint choices:
   }
 
   @if $breakpoint == laptop {
-    @media (max-width: 90em) { @content };     //1440px
+    @media (max-width: 90em) { @content };        //1440px
   }
 
   @if $breakpoint == big-desktop {
