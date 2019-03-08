@@ -158,6 +158,9 @@ body {
       top: 108%;
       left: 50%;
       transform: translate(-50%, -50%); } }
+  @media (max-width: 37.5em) {
+    .btn--orange {
+      top: 84%; } }
 
 .about-icon {
   width: 37rem;
