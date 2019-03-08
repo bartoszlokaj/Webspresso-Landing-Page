@@ -6,7 +6,7 @@
   padding: 3.8rem 4.5rem;
   height: 127.1rem;
 
-  @include respond(phone) {
+  @include respond(phoneL) {
     background-image: url(../img/background/header-background-small.jpg);
     background-size: cover;
     background-position: center;

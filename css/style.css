@@ -101,7 +101,7 @@ body {
         margin-top: 2rem; } }
     @media (max-width: 26.6em) {
       .main-header__header-primary {
-        margin-top: 4rem; } }
+        margin-top: 6rem; } }
     .main-header__header-primary--top {
       font-size: 7.2rem;
       font-weight: medium;
@@ -232,7 +232,7 @@ body {
   font-weight: bold;
   padding: 3.8rem 4.5rem;
   height: 127.1rem; }
-  @media (max-width: 22.5em) {
+  @media (max-width: 26.6em) {
     .header {
       background-image: url(../img/background/header-background-small.jpg);
       background-size: cover;
