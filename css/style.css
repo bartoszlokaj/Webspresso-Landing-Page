@@ -135,6 +135,11 @@ body {
   margin: 16rem auto 0 auto; }
   .header-secondary--purple {
     color: #82358b; }
+  .header-secondary--aside {
+    width: 47rem;
+    text-align: left;
+    margin-left: 39rem;
+    margin-top: 24rem; }
 
 .btn:link, .btn:visited {
   font-weight: 600;
@@ -206,7 +211,7 @@ body {
       height: 44rem; } }
   @media (max-width: 37.5em) {
     .about-icon {
-      height: 62rem; } }
+      height: 58rem; } }
   .about-icon::after {
     content: url(../../img/section_about/about-section-arrow.png);
     position: absolute;
@@ -232,6 +237,9 @@ body {
     justify-content: center;
     border-radius: 2px;
     position: relative; }
+    @media (max-width: 37.5em) {
+      .about-icon__img-box {
+        width: none; } }
   .about-icon__img {
     position: absolute;
     top: 50%;
@@ -260,6 +268,31 @@ body {
     .about-icon--4 {
       margin-top: -2rem;
       margin-bottom: -5rem; } }
+
+.about {
+  margin-bottom: 16rem; }
+  .about__row {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 8rem; }
+    .about__row:last-child {
+      margin-bottom: 16rem; }
+      @media (max-width: 56.25em) {
+        .about__row:last-child {
+          margin-top: 0; } }
+    @media (max-width: 56.25em) {
+      .about__row {
+        flex-direction: column;
+        align-items: center; } }
+
+.fast__content {
+  background-image: url(../img/background/fast-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 111vh;
+  padding-top: 4rem; }
 
 .header {
   background-image: url(../img/background/header-background.jpg);
@@ -327,22 +360,6 @@ body {
         transform: scale(1.1); }
     .header__socials .logo-facebook {
       height: 2.5rem; }
-
-.about__row {
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-  flex-wrap: wrap;
-  margin-top: 8rem; }
-  .about__row:last-child {
-    margin-bottom: 16rem; }
-    @media (max-width: 56.25em) {
-      .about__row:last-child {
-        margin-top: 0; } }
-  @media (max-width: 56.25em) {
-    .about__row {
-      flex-direction: column;
-      align-items: center; } }
 
 .dupa {
   height: 60vh; }

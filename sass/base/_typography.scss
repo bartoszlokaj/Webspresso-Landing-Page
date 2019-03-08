@@ -110,10 +110,16 @@ body {
   font-size: 7.2rem;
   text-transform: uppercase;
   text-align: center;
-  // width: 50%;
   margin: $margin-big auto 0 auto;
 
   &--purple {
     color: $color-tertiary-purple;
+  }
+
+  &--aside {
+    width: 47rem;
+    text-align: left;
+    margin-left: 39rem;
+    margin-top: 24rem;
   }
 }

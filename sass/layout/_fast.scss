@@ -1,5 +1,10 @@
 .fast {
-  background-image: url(../img/background/fast-background.jpg);
-  background-size: cover;
-  background-position: center;
+
+  &__content {
+    background-image: url(../img/background/fast-background.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 111vh;
+    padding-top: 4rem;
+  }
 }
