@@ -27,24 +27,29 @@ body {
 
 .main-header {
   margin: 30rem auto 0 auto;
-  width: 119rem;
+  max-width: 119rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
-  @include respond(phablet) {
-    flex-direction: column;
+  @include respond(tab-port) {
+    margin-top: 15rem;
   }
 
   &__logo-img {
     @include respond(laptop) {
       height: 35rem;
     }
+
+    @include respond(tab-port) {
+      margin-left: 10rem;
+    }
   }
 
   &__text-box {
     margin-left: 3rem;
-    max-width: 50%;
+    // max-width: 50%;
   }
 
   &__header-primary {
@@ -52,6 +57,10 @@ body {
     flex-direction: column;
     letter-spacing: 2px;
     max-width: 50rem;
+
+    @include respond(tab-port) {
+      margin-top: 2rem;
+    }
 
     &--top {
       font-size: 7.2rem;
