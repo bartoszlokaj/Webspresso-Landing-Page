@@ -18,6 +18,14 @@
   margin-left: 39rem;
   margin-top: 5rem;
 
+  &__item{
+    margin-bottom: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   &__number {
     font-size: 70px;
     line-height: 1.3;
@@ -30,7 +38,7 @@
     display: inline-block;
   }
 
-  &__item{
-    margin-bottom: 4rem;
+  &__text {
+    min-width: 60rem;
   }
 }
