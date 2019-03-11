@@ -1,14 +1,24 @@
 .about {
-  
+  margin-bottom: $margin-big;
+
   &__row {
     display: flex;
     justify-content: center;
     align-items: baseline;
     flex-wrap: wrap;
     margin-top: $margin-small;
-    
+
     &:last-child {
       margin-bottom: $margin-big;
+
+      @include respond(tab-port) {
+        margin-top: 0;
+      }
+    }
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

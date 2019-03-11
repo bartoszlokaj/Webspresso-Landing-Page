@@ -25,6 +25,18 @@
     line-height: 1.6;
     transition: all 0.2s;
 
+    @include respond(phoneL) {
+      width: 45rem;
+    }
+
+    @include respond(phone) {
+      width: 40rem;
+    }
+
+    @include respond(phoneS) {
+      width: 36rem;
+    }
+
     &:hover {
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
       transform: translateY(-0.5rem);
@@ -50,9 +62,17 @@
 
     @include respond(tab-land) {
       position: absolute;
-      top: 90%;
+      top: 108%;
       left: 50%;
       transform: translate(-50%, -50%);
+    }
+
+    @include respond(phablet) {
+      top: 84%;
+    }
+
+    @include respond(phone) {
+      top: 80%;
     }
   }
 }

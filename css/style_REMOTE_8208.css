@@ -76,12 +76,9 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap; }
-<<<<<<< HEAD
-=======
   @media (max-width: 56.25em) {
     .main-header {
       margin-top: 15rem; } }
->>>>>>> a18ac2128091dbfc7d7bc8ea4c95a16eed750e18
   @media (max-width: 90em) {
     .main-header__logo-img {
       height: 35rem; } }

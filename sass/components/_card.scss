@@ -4,6 +4,15 @@
   padding-bottom: 1rem;
   transition: all .2s ease-in;
   position: relative;
+  font-size: 25px;
+
+  @include respond(tab-port) {
+    height: 44rem;
+  }
+
+  @include respond(phablet) {
+    height: 58rem;
+  }
   
   &::after {
     content: url(../../img/section_about/about-section-arrow.png);
@@ -40,6 +49,10 @@
     justify-content: center;
     border-radius: 2px;
     position: relative;
+
+    @include respond(phablet) {
+      width: none;
+    }
   }
 
   &__img {
@@ -59,6 +72,29 @@
 
     &--purple {
       display: inline-block;
+    }
+
+    &--3 {
+      @include respond(phablet) {
+        margin-top: 3rem;
+      }
+    }
+
+    @include respond(phablet) {
+      width: 44rem;
+    }
+  }
+
+  &--3 {
+    @include respond(tab-port) {
+      margin-top: 1rem;
+    }
+  }
+
+  &--4 {
+    @include respond(tab-port) {
+      margin-top: -2rem;
+      margin-bottom: -5rem;
     }
   }
 }

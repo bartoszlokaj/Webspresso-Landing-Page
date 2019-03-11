@@ -32,16 +32,37 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+<<<<<<< HEAD
+=======
+
+  @include respond(tab-port) {
+    margin-top: 15rem;
+  }
+>>>>>>> a18ac2128091dbfc7d7bc8ea4c95a16eed750e18
 
   &__logo-img {
     @include respond(laptop) {
       height: 35rem;
     }
+
+    @include respond(tab-port) {
+      margin-left: 10rem;
+    }
+
+    @include respond(phoneL) {
+      margin-left: 6rem;
+      height: 26.6rem;
+    }
+
+    @include respond(phoneS) {
+      margin-left: 4rem;
+      height: 24.6rem;
+    }
   }
 
   &__text-box {
     margin-left: 3rem;
-    max-width: 50%;
+    text-align: center;
   }
 
   &__header-primary {
@@ -50,12 +71,24 @@ body {
     letter-spacing: 2px;
     max-width: 50rem;
 
+    @include respond(tab-port) {
+      margin-top: 2rem;
+    }
+
+    @include respond(phoneL) {
+      margin-top: 6rem;
+    }
+
     &--top {
       font-size: 7.2rem;
       font-weight: medium;
       line-height: 1.2;
       text-transform: uppercase;
       margin: 0;
+
+      @include respond(phoneL) {
+        font-size: 6rem;
+      }
 
       @include respond(phone) {
         font-size: 4.5rem;
@@ -64,6 +97,10 @@ body {
 
     &--bottom {
       font-size: 19.4rem;
+
+      @include respond(phoneL) {
+        font-size: 18rem;
+      }
 
       @include respond(phone) {
         font-size: 12rem;
@@ -76,10 +113,25 @@ body {
   font-size: 7.2rem;
   text-transform: uppercase;
   text-align: center;
-  width: 50%;
   margin: $margin-big auto 0 auto;
 
   &--purple {
     color: $color-tertiary-purple;
+  }
+
+  &--aside {
+    width: 47rem;
+    text-align: left;
+    margin-left: 39rem;
+    margin-top: 24rem;
+
+    @include respond(tab-port) {
+      margin: 24rem auto 0 auto;
+      width: 40rem;
+    }
+
+    @include respond(phablet) {
+      margin-top: $margin-big;
+    }
   }
 }

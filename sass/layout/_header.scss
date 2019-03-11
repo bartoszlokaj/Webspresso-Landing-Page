@@ -6,7 +6,7 @@
   padding: 3.8rem 4.5rem;
   height: 127.1rem;
 
-  @include respond(phone) {
+  @include respond(phoneL) {
     background-image: url(../img/background/header-background-small.jpg);
     background-size: cover;
     background-position: center;
@@ -43,7 +43,7 @@
     display: flex;
     justify-content: space-around;
 
-    @include respond(phablet) {
+    @include respond(tab-port) {
       display: none;
     }
   }
@@ -77,9 +77,18 @@
     border-radius: 2.5rem;
   }
 
-  &__socials--facebook {
+  &__socials {
     margin-left: 2.5rem;
     height: 2rem;
+
+    &--link {
+      display: block;
+      transition: transform .3s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
 
     .logo-facebook {
       height: 2.5rem;
