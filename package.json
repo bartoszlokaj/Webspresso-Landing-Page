@@ -9,6 +9,7 @@
   "author": "Bartosz Łokaj",
   "license": "ISC",
   "devDependencies": {
+    "gulp": "^4.0.0",
     "node-sass": "^4.11.0"
   }
 }
