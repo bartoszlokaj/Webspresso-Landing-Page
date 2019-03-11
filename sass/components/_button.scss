@@ -39,12 +39,12 @@
 
     &:hover {
       box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
-      transform: translateY(-0.5rem);
+      // transform: translateY(-5px);
     }
 
     &:active {
       box-shadow: 0 0.2rem .5rem rgba($color-black, 0.5);
-      transform: translateY(-0.2rem);
+      // transform: translateY(-2px);
     }
   }
 
@@ -62,13 +62,13 @@
 
     @include respond(tab-land) {
       position: absolute;
-      top: 108%;
+      top: 115%;
       left: 50%;
       transform: translate(-50%, -50%);
     }
 
     @include respond(phablet) {
-      top: 84%;
+      top: 86%;
     }
 
     @include respond(phone) {
