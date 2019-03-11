@@ -10,3 +10,27 @@
       background-color: $color-tertiary-purple;
     }
 }
+
+.fast-list {
+  font-size: 28px;
+  font-weight: bold;
+  list-style-type: none;
+  margin-left: 39rem;
+  margin-top: 5rem;
+
+  &__number {
+    font-size: 70px;
+    line-height: 1.3;
+    text-align: center;
+    height: 78px;
+    width: 78px;
+    border-radius: 50%;
+    background-color: $color-secondary-orange;
+    margin-right: 2rem;
+    display: inline-block;
+  }
+
+  &__item{
+    margin-bottom: 4rem;
+  }
+}
