@@ -1,10 +1,10 @@
 @font-face {
   font-family: "BloggerSans";
-  src: url("fonts/BloggerSans.eot"); /* IE9 Compat Modes */
-  src: url("fonts/BloggerSans.eot?#iefix") format("embedded-opentype"),
-    /* IE6-IE8 */ url("fonts/BloggerSans.woff") format("woff"),
-    /* Modern Browsers */ url("fonts/BloggerSans.ttf") format("truetype"),
-    /* Safari, Android, iOS */ url("fonts/BloggerSans.svg#BloggerSans")
+  src: url("../../fonts/BloggerSans.eot"); /* IE9 Compat Modes */
+  src: url("../../fonts/BloggerSans.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../fonts/BloggerSans.woff") format("woff"),
+    /* Modern Browsers */ url("../../fonts/BloggerSans.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../../fonts/BloggerSans.svg#BloggerSans")
       format("svg"); /* Legacy iOS */
   font-style: normal;
   font-weight: normal;
@@ -32,13 +32,6 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-<<<<<<< HEAD
-=======
-
-  @include respond(tab-port) {
-    margin-top: 15rem;
-  }
->>>>>>> a18ac2128091dbfc7d7bc8ea4c95a16eed750e18
 
   &__logo-img {
     @include respond(laptop) {
