@@ -118,8 +118,8 @@ body {
     margin-left: 39rem;
     margin-top: 24rem;
 
-    @include respond(tab-port) {
-      margin: 24rem auto 0 auto;
+    @include respond(tab-land) {
+      margin: 15rem auto 0 auto;
       width: 40rem;
     }
 

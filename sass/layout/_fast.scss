@@ -2,16 +2,17 @@
     background-image: url(../img/background/fast-background.jpg);
     background-size: cover;
     background-position: center;
-    height: 111vh;
+    // height: 111vh;
     padding-top: 4rem;
 
-    @include respond(phablet) {
+    @include respond(tab-port) {
       background-image: none;
       background-color: $color-tertiary-purple;
     }
 
     &__container {
       display: flex;
+      flex-wrap: wrap;
       
       .fast-list {
         font-size: 28px;
@@ -19,6 +20,14 @@
         list-style-type: none;
         margin-left: 39rem;
         margin-top: 10rem;
+
+        @include respond(tab-land) {
+          margin-left: 20rem;
+        }
+
+        @include respond(tab-port) {
+          margin: 0 auto;
+        }
         
         &__item{
           margin-bottom: 4rem;
@@ -26,6 +35,10 @@
           flex-wrap: wrap;
           justify-content: flex-start;
           align-items: center;
+
+          @include respond(tab-port) {
+            flex-direction: column;
+          }
         }
         
         &__number {
@@ -38,19 +51,42 @@
           background-color: $color-secondary-orange;
           margin-right: 2rem;
           display: inline-block;
+
+          @include respond(tab-port) {
+            margin: 0 0 3rem 0;
+          }
         }
         
         &__text {
-          min-width: 60rem;
+          max-width: 38rem;
+          text-align: center;
+
+          @include respond(tab-port) {
+            max-width: 34rem;
+            margin-bottom: 3rem;
+          }
         }
       }
         .fast-logo {
           position: relative;
-          &::after {
-            content: url(../../img/logo-fast.png);
+          width: 62rem;
+          height: 50rem;
+
+          @include respond(tab-port) {
+            order: -1;
+            margin: auto;
+            margin-top: 15rem;
+          }
+          &__img {
             position: absolute;
-            top: -26%;
-            margin-left: -35rem;
+            top: -17%;
+            margin-left: -7rem;
+
+            @include respond(tab-port) {
+              height: 35rem;
+              top: 5%;
+              margin-left: 4rem;
+            }
           }
       }
     }
