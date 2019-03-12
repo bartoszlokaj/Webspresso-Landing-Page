@@ -344,12 +344,11 @@ body {
           .fast__container .fast-list__number {
             margin: 0 0 3rem 0; } }
       .fast__container .fast-list__text {
-        max-width: 38rem;
-        text-align: center; }
+        max-width: 33rem; }
         @media (max-width: 56.25em) {
           .fast__container .fast-list__text {
-            max-width: 34rem;
-            margin-bottom: 3rem; } }
+            margin-bottom: 3rem;
+            text-align: center; } }
     .fast__container .fast-logo {
       position: relative;
       width: 62rem;
