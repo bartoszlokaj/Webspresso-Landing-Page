@@ -1,7 +1,26 @@
 .price {
   background-image: url(../../img/background/price-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 100vh;
+  background-size: cover;
   margin-top: -14rem;
+  padding: 14rem;
+
+  .price-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: $margin-big;
+
+    &__logo {
+      height: 15.5rem;
+    margin-right: 5rem;
+    display: flex;
+    }
+
+    &__header {
+      display: flex;
+      height: 15.5rem;
+      align-items: center;
+    }
+  }
 }
