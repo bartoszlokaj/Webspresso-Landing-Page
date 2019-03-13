@@ -1,0 +1,10 @@
+.speed-test {
+  background-color: $color-light-gray;
+  height: 100vh;
+
+  &__row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
