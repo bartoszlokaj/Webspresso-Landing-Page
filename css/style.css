@@ -156,10 +156,17 @@ body {
     @media (max-width: 37.5em) {
       .header-secondary--aside {
         margin-top: 8rem; } }
-  .header-secondary--price {
-    font-size: 9.3rem;
-    letter-spacing: 1.4rem;
-    margin: 0; }
+
+.header-price {
+  font-size: 93px;
+  letter-spacing: 1.4rem;
+  margin: 0;
+  text-align: center; }
+  @media (max-width: 37.5em) {
+    .header-price {
+      display: flex;
+      flex-direction: column;
+      margin-top: 18rem; } }
 
 .btn {
   font-weight: 600;
@@ -223,6 +230,9 @@ body {
     font-size: 3.7rem;
     padding-bottom: 12.6rem;
     border-radius: 3rem; }
+    @media (max-width: 56.25em) {
+      .btn--white {
+        margin-top: 10rem; } }
     .btn--white:hover {
       background-color: #ee7133;
       color: #fff;
@@ -321,11 +331,12 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 111vh;
-  padding-top: 4rem; }
+  padding-top: 20rem; }
   @media (max-width: 37.5em) {
     .fast {
       background-image: none;
-      background-color: #82358b; } }
+      background-color: #82358b;
+      padding-bottom: 20rem; } }
   .fast__container {
     display: flex;
     flex-wrap: wrap; }
@@ -482,22 +493,38 @@ body {
 .price {
   background-image: url(../../img/background/price-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: -14rem;
+  background-size: cover;
+  background-position: center;
+  margin-top: -18.4rem;
   padding: 14rem; }
+  @media (max-width: 56.25em) {
+    .price {
+      margin-top: -19.7rem; } }
+  @media (max-width: 37.5em) {
+    .price {
+      background-image: none;
+      background-color: #ee7133;
+      padding: 5rem; } }
   .price .price-top {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 9rem; }
     .price .price-top__logo {
       height: 15.5rem;
       margin-right: 5rem;
       display: flex; }
+      @media (max-width: 37.5em) {
+        .price .price-top__logo {
+          height: 24rem; } }
     .price .price-top__header {
       display: flex;
       height: 15.5rem;
       align-items: center; }
+      @media (max-width: 37.5em) {
+        .price .price-top__header {
+          height: 24rem; } }
   .price .price-bottom {
     display: flex;
     justify-content: center;

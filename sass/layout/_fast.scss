@@ -3,11 +3,12 @@
     background-size: cover;
     background-position: center;
     min-height: 111vh;
-    padding-top: 4rem;
+    padding-top: 20rem;
 
   @include respond(phablet) {
     background-image: none;
     background-color: $color-tertiary-purple;
+    padding-bottom: 20rem;
   }
 
   &__container {

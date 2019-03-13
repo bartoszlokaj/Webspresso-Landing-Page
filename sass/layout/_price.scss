@@ -1,26 +1,47 @@
 .price {
   background-image: url(../../img/background/price-background.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  margin-top: -14rem;
+  background-size: cover;
+  background-position: center;
+  margin-top: -18.4rem;
   padding: 14rem;
+
+  @include respond(tab-port) {
+    margin-top: -19.7rem;
+  }
+
+  @include respond(phablet) {
+    background-image: none;
+    background-color: $color-secondary-orange;
+    padding: 5rem;
+  }
 
   .price-top {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 9rem;
 
     &__logo {
     height: 15.5rem;
     margin-right: 5rem;
     display: flex;
+
+    @include respond(phablet) {
+      height: 24rem;
+    }
+
     }
 
     &__header {
       display: flex;
       height: 15.5rem;
       align-items: center;
+
+      @include respond(phablet) {
+        height: 24rem;
+      }
     }
   }
 
