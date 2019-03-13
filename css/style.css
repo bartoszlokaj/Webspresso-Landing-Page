@@ -230,7 +230,7 @@ body {
     font-size: 3.7rem;
     padding-bottom: 12.6rem;
     border-radius: 3rem; }
-    @media (max-width: 56.25em) {
+    @media (max-width: 37.5em) {
       .btn--white {
         margin-top: 10rem; } }
     .btn--white:hover {
@@ -499,7 +499,7 @@ body {
   padding: 14rem; }
   @media (max-width: 56.25em) {
     .price {
-      margin-top: -19.7rem; } }
+      margin-top: -26rem; } }
   @media (max-width: 37.5em) {
     .price {
       background-image: none;
@@ -511,10 +511,20 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin-top: 9rem; }
+    @media (max-width: 56.25em) {
+      .price .price-top {
+        margin-top: 26rem; } }
+    @media (max-width: 37.5em) {
+      .price .price-top {
+        margin-top: 10rem;
+        flex-direction: column; } }
     .price .price-top__logo {
       height: 15.5rem;
       margin-right: 5rem;
       display: flex; }
+      @media (max-width: 90em) {
+        .price .price-top__logo {
+          height: 19.4rem; } }
       @media (max-width: 37.5em) {
         .price .price-top__logo {
           height: 24rem; } }
@@ -522,6 +532,9 @@ body {
       display: flex;
       height: 15.5rem;
       align-items: center; }
+      @media (max-width: 90em) {
+        .price .price-top__header {
+          height: 19.4rem; } }
       @media (max-width: 37.5em) {
         .price .price-top__header {
           height: 24rem; } }
