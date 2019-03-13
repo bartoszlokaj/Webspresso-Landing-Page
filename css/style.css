@@ -172,6 +172,9 @@ body {
   display: flex;
   flex-direction: column;
   text-align: left; }
+  @media (max-width: 56.25em) {
+    .header-double {
+      text-align: center; } }
 
 .btn {
   font-weight: 600;
@@ -556,7 +559,12 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-end; }
+    align-items: flex-end;
+    flex-wrap: wrap; }
+    @media (max-width: 56.25em) {
+      .speed-test__row {
+        flex-direction: column;
+        align-items: center; } }
   .speed-test__header {
     margin-bottom: 3.3rem; }
 
