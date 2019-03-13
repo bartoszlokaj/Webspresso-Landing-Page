@@ -33,18 +33,17 @@
     }
 
     &__logo {
-    height: 15.5rem;
-    margin-right: 5rem;
-    display: flex;
+      height: 15.5rem;
+      margin-right: 5rem;
+      display: flex;
 
-    @include respond(laptop) {
-      height: 19.4rem;
-    }
+      @include respond(laptop) {
+        height: 19.4rem;
+      }
 
-    @include respond(phablet) {
-      height: 24rem;
-    }
-
+      @include respond(phablet) {
+        height: 24rem;
+      }
     }
 
     &__header {

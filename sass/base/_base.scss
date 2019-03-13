@@ -9,17 +9,16 @@
 html {
   font-size: 62.5%; // 1rem = 10px;   10px/16px = 62.5%
 
-  
   @include respond(laptop) {
-    font-size: 50%;   //1rem = 8px
+    font-size: 50%; //1rem = 8px
   }
 
   @include respond(phablet) {
-    font-size: 37.5%;   //1rem = 6px
+    font-size: 37.5%; //1rem = 6px
   }
 
   @include respond(big-desktop) {
-    font-size: 75%;   //1rem = 12px
+    font-size: 75%; //1rem = 12px
   }
 }
 
