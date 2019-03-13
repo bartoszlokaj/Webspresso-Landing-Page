@@ -216,6 +216,10 @@ body {
     .btn--orange {
       top: 80%; } }
 
+.btn--white {
+  background-color: #fff;
+  color: #ee7133 !important; }
+
 .about-icon {
   width: 37rem;
   height: 39.5rem;
