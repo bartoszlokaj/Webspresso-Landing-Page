@@ -5,94 +5,94 @@
     // height: 111vh;
     padding-top: 4rem;
 
-    @include respond(tab-port) {
-      background-image: none;
-      background-color: $color-tertiary-purple;
-    }
+  @include respond(tab-port) {
+    background-image: none;
+    background-color: $color-tertiary-purple;
+  }
 
-    &__container {
-      display: flex;
-      flex-wrap: wrap;
-      
-      .fast-list {
-        font-size: 28px;
-        font-weight: bold;
-        list-style-type: none;
-        margin-left: 39rem;
-        margin-top: 10rem;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
 
-        @include respond(tab-land) {
-          margin-left: 20rem;
-        }
+    .fast-list {
+      font-size: 28px;
+      font-weight: bold;
+      list-style-type: none;
+      margin-left: 39rem;
+      margin-top: 10rem;
+
+      @include respond(tab-land) {
+        margin-left: 20rem;
+      }
+
+      @include respond(tab-port) {
+        margin: 0 auto;
+      }
+
+      &__item {
+        margin-bottom: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
 
         @include respond(tab-port) {
-          margin: 0 auto;
-        }
-        
-        &__item{
-          margin-bottom: 4rem;
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: flex-start;
-          align-items: center;
-
-          @include respond(tab-port) {
-            flex-direction: column;
-          }
-        }
-        
-        &__number {
-          font-size: 70px;
-          line-height: 1.3;
-          text-align: center;
-          height: 78px;
-          width: 78px;
-          border-radius: 50%;
-          background-color: $color-secondary-orange;
-          margin-right: 2rem;
-          display: inline-block;
-
-          @include respond(tab-port) {
-            margin: 0 0 3rem 0;
-          }
-        }
-        
-        &__text {
-          max-width: 38rem;
-          text-align: center;
-
-          @include respond(tab-port) {
-            max-width: 34rem;
-            margin-bottom: 3rem;
-          }
+          flex-direction: column;
         }
       }
-        .fast-logo {
-          position: relative;
-          width: 62rem;
-          height: 50rem;
 
-          @include respond(tab-port) {
-            order: -1;
-            margin: auto;
-            margin-top: 15rem;
-          }
+      &__number {
+        font-size: 70px;
+        line-height: 1.3;
+        text-align: center;
+        height: 78px;
+        width: 78px;
+        border-radius: 50%;
+        background-color: $color-secondary-orange;
+        margin-right: 2rem;
+        display: inline-block;
 
-          &__img {
-            position: absolute;
-            top: -17%;
-            margin-left: -7rem;
+        @include respond(tab-port) {
+          margin: 0 0 3rem 0;
+        }
+      }
 
-            @include respond(tab-port) {
-              height: 35rem;
-              top: 5%;
-              margin-left: 4rem;
-            }
+      &__text {
+        max-width: 33rem;
 
-            @include respond(phoneS) {
-              margin-left: 0;
-            }
-          }
+        @include respond(tab-port) {
+          // max-width: 34rem;
+          margin-bottom: 3rem;
+          text-align: center;
+        }
+      }
+    }
+    .fast-logo {
+      position: relative;
+      width: 62rem;
+      height: 50rem;
+
+      @include respond(tab-port) {
+        order: -1;
+        margin: auto;
+        margin-top: 15rem;
+      }
+
+      &__img {
+        position: absolute;
+        top: -17%;
+        margin-left: -7rem;
+
+        @include respond(tab-port) {
+          height: 35rem;
+          top: 5%;
+          margin-left: 4rem;
+        }
+
+        @include respond(phoneS) {
+          margin-left: 0;
+        }
       }
     }
   }
+}
