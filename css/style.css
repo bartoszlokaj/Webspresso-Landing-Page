@@ -246,6 +246,17 @@ body {
       background-color: #ee7133;
       color: #fff;
       border: 5px solid #fff; }
+  .btn__secondary {
+    font-size: 20px;
+    height: 6.4rem;
+    width: 40rem;
+    text-align: center;
+    line-height: 3.2;
+    letter-spacing: 1px;
+    border-radius: 5rem; }
+    .btn__secondary--purple {
+      color: #82358b;
+      background: #fff; }
 
 .about-icon {
   width: 37rem;
@@ -482,7 +493,7 @@ body {
     color: #ee7133; }
   @media (max-width: 90em) {
     .header__list-link {
-      padding: 1rem .6rem; } }
+      padding: 1rem 0.6rem; } }
   .header__info-box {
     width: 27.5rem;
     background-color: #ee7133;
@@ -493,7 +504,7 @@ body {
     height: 2rem; }
     .header__socials--link {
       display: block;
-      transition: transform .3s; }
+      transition: transform 0.3s; }
       .header__socials--link:hover {
         transform: scale(1.1); }
     .header__socials .logo-facebook {
