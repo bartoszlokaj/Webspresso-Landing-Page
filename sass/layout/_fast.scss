@@ -2,10 +2,10 @@
     background-image: url(../img/background/fast-background.png);
     background-size: cover;
     background-position: center;
-    // height: 111vh;
+    min-height: 111vh;
     padding-top: 4rem;
 
-  @include respond(tab-port) {
+  @include respond(phablet) {
     background-image: none;
     background-color: $color-tertiary-purple;
   }
@@ -13,6 +13,11 @@
   &__container {
     display: flex;
     flex-wrap: wrap;
+
+    @include respond(phablet) {
+      background-image: none;
+      background-color: $color-tertiary-purple;
+    }
 
     .fast-list {
       font-size: 28px;
@@ -32,7 +37,7 @@
       &__item {
         margin-bottom: 4rem;
         display: flex;
-        flex-wrap: wrap;
+        // flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
 
@@ -74,23 +79,45 @@
 
       @include respond(tab-port) {
         order: -1;
-        margin: auto;
-        margin-top: 15rem;
+        width: 100%;
+        margin: 6rem auto 6rem auto;
+        display:flex;
+        justify-content: center;
+      }
+
+      @include respond(phablet) {
+        order: -1;
+      }
+
+      @include respond(phoneS) {
+        height: 37rem;
       }
 
       &__img {
         position: absolute;
         top: -17%;
-        margin-left: -7rem;
+        margin-left: -4rem;
+
+        @include respond(tab-land) {
+          height: 55rem;
+          top:-6%;
+          margin-left: -3rem;
+        }
 
         @include respond(tab-port) {
-          height: 35rem;
-          top: 5%;
-          margin-left: 4rem;
+          height: 50rem;
+          top: 0;
+          margin-left: -5rem;
+        }
+
+        @include respond(phablet) {
+          height: 44.5rem;
         }
 
         @include respond(phoneS) {
-          margin-left: 0;
+          height: 36rem;
+          margin-left: -6rem;
+          margin-bottom: 8rem;
         }
       }
     }

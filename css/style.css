@@ -147,11 +147,15 @@ body {
     margin-top: 24rem; }
     @media (max-width: 75em) {
       .header-secondary--aside {
-        margin: 15rem auto 0 auto;
+        margin: 15rem auto 0 20rem;
+        width: 40rem; } }
+    @media (max-width: 56.25em) {
+      .header-secondary--aside {
+        margin: 28rem auto 0 auto;
         width: 40rem; } }
     @media (max-width: 37.5em) {
       .header-secondary--aside {
-        margin-top: 16rem; } }
+        margin-top: 8rem; } }
 
 .btn:link, .btn:visited {
   font-weight: 600;
@@ -301,14 +305,19 @@ body {
   background-image: url(../img/background/fast-background.png);
   background-size: cover;
   background-position: center;
+  min-height: 111vh;
   padding-top: 4rem; }
-  @media (max-width: 56.25em) {
+  @media (max-width: 37.5em) {
     .fast {
       background-image: none;
       background-color: #82358b; } }
   .fast__container {
     display: flex;
     flex-wrap: wrap; }
+    @media (max-width: 37.5em) {
+      .fast__container {
+        background-image: none;
+        background-color: #82358b; } }
     .fast__container .fast-list {
       font-size: 28px;
       font-weight: bold;
@@ -324,7 +333,6 @@ body {
       .fast__container .fast-list__item {
         margin-bottom: 4rem;
         display: flex;
-        flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center; }
         @media (max-width: 56.25em) {
@@ -356,20 +364,38 @@ body {
       @media (max-width: 56.25em) {
         .fast__container .fast-logo {
           order: -1;
-          margin: auto;
-          margin-top: 15rem; } }
+          width: 100%;
+          margin: 6rem auto 6rem auto;
+          display: flex;
+          justify-content: center; } }
+      @media (max-width: 37.5em) {
+        .fast__container .fast-logo {
+          order: -1; } }
+      @media (max-width: 20rem) {
+        .fast__container .fast-logo {
+          height: 37rem; } }
       .fast__container .fast-logo__img {
         position: absolute;
         top: -17%;
-        margin-left: -7rem; }
+        margin-left: -4rem; }
+        @media (max-width: 75em) {
+          .fast__container .fast-logo__img {
+            height: 55rem;
+            top: -6%;
+            margin-left: -3rem; } }
         @media (max-width: 56.25em) {
           .fast__container .fast-logo__img {
-            height: 35rem;
-            top: 5%;
-            margin-left: 4rem; } }
+            height: 50rem;
+            top: 0;
+            margin-left: -5rem; } }
+        @media (max-width: 37.5em) {
+          .fast__container .fast-logo__img {
+            height: 44.5rem; } }
         @media (max-width: 20rem) {
           .fast__container .fast-logo__img {
-            margin-left: 0; } }
+            height: 36rem;
+            margin-left: -6rem;
+            margin-bottom: 8rem; } }
 
 .header {
   background-image: url(../img/background/header-background.jpg);

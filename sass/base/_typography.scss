@@ -119,12 +119,17 @@ body {
     margin-top: 24rem;
 
     @include respond(tab-land) {
-      margin: 15rem auto 0 auto;
+      margin: 15rem auto 0 20rem;
+      width: 40rem;
+    }
+
+    @include respond(tab-port) {
+      margin: 28rem auto 0 auto;
       width: 40rem;
     }
 
     @include respond(phablet) {
-      margin-top: $margin-big;
+      margin-top: $margin-small;
     }
   }
 }
