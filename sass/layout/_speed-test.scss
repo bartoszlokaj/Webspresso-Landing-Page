@@ -1,10 +1,11 @@
 .speed-test {
   background-color: $color-light-gray;
   height: 100vh;
+  margin-top: -16rem;
 
   &__row {
     max-width: 120rem;
-    margin: 0 auto;
+    margin: $margin-big auto 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -23,6 +24,16 @@
   &__logo {
     @include respond(tab-port) {
       margin-left: 6rem;
+    }
+  }
+
+  &__img {
+    @include respond(tab-port) {
+      height: 22rem;
+    }
+
+    @include respond(phablet) {
+      height: 25.5rem;
     }
   }
 }
