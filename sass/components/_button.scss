@@ -18,11 +18,19 @@
   }
 
   &--big {
-    border-radius: 2rem;
+    border-radius: 3.4rem;
     text-align: center;
     letter-spacing: 2px;
-    line-height: 1.4;
     transition: all 0.2s;
+    font-size: 4.1rem;
+    height: 13rem;
+    width: 48.2rem;
+
+    @include respond(phablet) {
+      font-size: 4.6rem;
+      height: 15rem;
+      width: 55.2rem;
+    }
 
     @include respond(phoneL) {
       width: 45rem;
@@ -37,13 +45,11 @@
     }
 
     &:hover {
-      box-shadow: 0 0.5rem 1rem rgba($color-black, 0.5);
-      // transform: translateY(-5px);
+      box-shadow: 0 0 1.3rem rgba(0, 0, 0, 0.5);
     }
 
     &:active {
-      box-shadow: 0 0.2rem .5rem rgba($color-black, 0.5);
-      // transform: translateY(-2px);
+      box-shadow: 0 0 .5rem rgba($color-black, 0.5);
     }
   }
 
@@ -56,6 +62,7 @@
     height: 9.1rem;
     color: $color-white;
     border: 3px solid transparent;
+    border-radius: 2rem;
     transition: all 0.2s;
     position: relative;
 
@@ -97,23 +104,31 @@
   &--white {
     background-color: $color-white;
     color: $color-secondary-orange;
-    font-size: 4.1rem;
     border: 5px solid transparent;
     width: 43rem;
     height: 11rem;
     font-size: 3.7rem;
-    padding-bottom: 12.6rem;
+    padding-bottom: 10.3rem;
     border-radius: 3rem;
 
     @include respond(phablet) {
       margin-top: 10rem;
-      font-size: 4.6rem;
     }
 
     &:hover {
       background-color: $color-secondary-orange;
       color: $color-white;
       border: 5px solid $color-white;
+    }
+  }
+
+  &--purple {
+    color: $color-tertiary-purple;
+    background: $color-white;
+    border: 5px solid $color-tertiary-purple;
+
+    @include respond(phablet) {
+      width: 46rem;
     }
   }
 

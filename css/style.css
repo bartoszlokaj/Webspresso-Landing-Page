@@ -197,11 +197,18 @@ body {
   .btn__text:not(:last-child) {
     margin-top: 0.5rem; }
   .btn--big {
-    border-radius: 2rem;
+    border-radius: 3.4rem;
     text-align: center;
     letter-spacing: 2px;
-    line-height: 1.4;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    font-size: 4.1rem;
+    height: 13rem;
+    width: 48.2rem; }
+    @media (max-width: 37.5em) {
+      .btn--big {
+        font-size: 4.6rem;
+        height: 15rem;
+        width: 55.2rem; } }
     @media (max-width: 26.6em) {
       .btn--big {
         width: 45rem; } }
@@ -212,9 +219,9 @@ body {
       .btn--big {
         width: 36rem; } }
     .btn--big:hover {
-      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 0 1.3rem rgba(0, 0, 0, 0.5); }
     .btn--big:active {
-      box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5); }
   .btn--orange {
     background-color: #ee7133;
     font-size: 2.8rem;
@@ -224,6 +231,7 @@ body {
     height: 9.1rem;
     color: #fff;
     border: 3px solid transparent;
+    border-radius: 2rem;
     transition: all 0.2s;
     position: relative; }
     .btn--orange:hover {
@@ -256,21 +264,26 @@ body {
   .btn--white {
     background-color: #fff;
     color: #ee7133;
-    font-size: 4.1rem;
     border: 5px solid transparent;
     width: 43rem;
     height: 11rem;
     font-size: 3.7rem;
-    padding-bottom: 12.6rem;
+    padding-bottom: 10.3rem;
     border-radius: 3rem; }
     @media (max-width: 37.5em) {
       .btn--white {
-        margin-top: 10rem;
-        font-size: 4.6rem; } }
+        margin-top: 10rem; } }
     .btn--white:hover {
       background-color: #ee7133;
       color: #fff;
       border: 5px solid #fff; }
+  .btn--purple {
+    color: #82358b;
+    background: #fff;
+    border: 5px solid #82358b; }
+    @media (max-width: 37.5em) {
+      .btn--purple {
+        width: 46rem; } }
   .btn__secondary {
     font-size: 20px;
     height: 6.4rem;
@@ -631,7 +644,11 @@ body {
     color: #82358b;
     display: flex;
     justify-content: center;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 8rem; }
+  .speed-test__btn {
+    display: flex;
+    justify-content: center; }
 
 .dupa {
   height: 60vh; }
