@@ -573,7 +573,7 @@ body {
     align-items: flex-end;
     flex-wrap: wrap;
     max-width: 100rem;
-    margin: auto; }
+    margin: 8rem auto; }
   .heads__card {
     border: 2px solid transparent;
     border-radius: 2px;
@@ -582,7 +582,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: all .2s ease-in; }
+    .heads__card:hover {
+      cursor: pointer;
+      transform: scale(1.03);
+      background-color: #fff;
+      box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3); }
     .heads__card--2 {
       padding-top: 3rem; }
   .heads__text {
