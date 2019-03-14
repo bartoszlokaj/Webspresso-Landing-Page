@@ -22,11 +22,11 @@ $breakpoint choices:
 @mixin respond($breakpoint) {
 
   @if $breakpoint == phoneS {
-    @media (max-width: 20rem) { @content };       //320px
+    @media (max-width: 20em) { @content };       //320px
   }
 
   @if $breakpoint == phone {
-    @media (max-width: 22.5em) { @content };      //360px
+    @media (max-width: 23.4em) { @content };      //375px
   }
 
   @if $breakpoint == phoneL {

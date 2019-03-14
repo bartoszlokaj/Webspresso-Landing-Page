@@ -68,10 +68,11 @@ body {
 body {
   font-family: "BloggerSans", sans-serif;
   font-weight: 400;
-  font-size: 2.6rem;
+  font-size: 2rem;
   color: #fff; }
 
 .header__navigation {
+  font-size: 2.6rem;
   color: #fff;
   text-transform: uppercase;
   font-weight: 500;
@@ -94,7 +95,7 @@ body {
     .main-header__logo-img {
       margin-left: 6rem;
       height: 26.6rem; } }
-  @media (max-width: 20rem) {
+  @media (max-width: 20em) {
     .main-header__logo-img {
       margin-left: 4rem;
       height: 24.6rem; } }
@@ -121,23 +122,23 @@ body {
       @media (max-width: 26.6em) {
         .main-header__header-primary--top {
           font-size: 6rem; } }
-      @media (max-width: 22.5em) {
-        .main-header__header-primary--top {
-          font-size: 4.5rem; } }
     .main-header__header-primary--bottom {
       font-size: 19.4rem; }
       @media (max-width: 26.6em) {
         .main-header__header-primary--bottom {
           font-size: 18rem; } }
-      @media (max-width: 22.5em) {
+      @media (max-width: 23.4em) {
         .main-header__header-primary--bottom {
-          font-size: 12rem; } }
+          font-size: 16.1rem; } }
 
 .header-secondary {
   font-size: 7.2rem;
   text-transform: uppercase;
   text-align: center;
   margin: 16rem auto 0 auto; }
+  @media (max-width: 23.4em) {
+    .header-secondary {
+      font-size: 7.8rem; } }
   .header-secondary--purple {
     color: #82358b; }
   .header-secondary--aside {
@@ -199,10 +200,10 @@ body {
     @media (max-width: 26.6em) {
       .btn--big {
         width: 45rem; } }
-    @media (max-width: 22.5em) {
+    @media (max-width: 23.4em) {
       .btn--big {
         width: 40rem; } }
-    @media (max-width: 20rem) {
+    @media (max-width: 20em) {
       .btn--big {
         width: 36rem; } }
     .btn--big:hover {
@@ -227,7 +228,7 @@ body {
     @media (max-width: 37.5em) {
       .btn--orange {
         top: 86%; } }
-    @media (max-width: 22.5em) {
+    @media (max-width: 23.4em) {
       .btn--orange {
         top: 80%; } }
   .btn--white {
@@ -417,7 +418,7 @@ body {
       @media (max-width: 37.5em) {
         .fast__container .fast-logo {
           order: -1; } }
-      @media (max-width: 20rem) {
+      @media (max-width: 20em) {
         .fast__container .fast-logo {
           height: 37rem; } }
       .fast__container .fast-logo__img {
@@ -437,7 +438,7 @@ body {
         @media (max-width: 37.5em) {
           .fast__container .fast-logo__img {
             height: 44.5rem; } }
-        @media (max-width: 20rem) {
+        @media (max-width: 20em) {
           .fast__container .fast-logo__img {
             height: 36rem;
             margin-left: -6rem;
