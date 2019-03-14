@@ -1,0 +1,55 @@
+.heads {
+  background-color: $color-white;
+  padding-top: 16rem;
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    margin: auto;
+  }
+
+  &__card {
+    border: 2px solid transparent;
+    border-radius: 2px;
+    width: 25.5rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &--2 {
+      padding-top: 3rem;
+    }
+  }
+
+  &__text {
+    width: 20rem;
+    color: $color-tertiary-purple;
+    text-align: center;
+
+    @include respond(laptop) {
+      width: 25rem;
+    }
+
+    @include respond(phablet) {
+      width: 33.3rem;
+    }
+  }
+
+  &__text-header {
+    color: $color-primary-blue;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    &--1 {
+      margin-top: 4rem;
+    }
+
+    &--2 {
+      margin-top: 4rem;
+    }
+  }
+}

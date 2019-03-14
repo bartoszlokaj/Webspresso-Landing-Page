@@ -181,7 +181,10 @@ body {
 .blue-text {
   color: #04859f; }
 
-.pruple-text {
+.header-tertiary {
+  font-size: 4.3rem;
+  text-transform: uppercase;
+  text-align: center;
   color: #82358b; }
 
 .btn {
@@ -560,6 +563,46 @@ body {
         transform: scale(1.1); }
     .header__socials .logo-facebook {
       height: 2.5rem; }
+
+.heads {
+  background-color: #fff;
+  padding-top: 16rem; }
+  .heads__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    margin: auto; }
+  .heads__card {
+    border: 2px solid transparent;
+    border-radius: 2px;
+    width: 25.5rem;
+    height: 45rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .heads__card--2 {
+      padding-top: 3rem; }
+  .heads__text {
+    width: 20rem;
+    color: #82358b;
+    text-align: center; }
+    @media (max-width: 90em) {
+      .heads__text {
+        width: 25rem; } }
+    @media (max-width: 37.5em) {
+      .heads__text {
+        width: 33.3rem; } }
+  .heads__text-header {
+    color: #04859f;
+    text-transform: uppercase;
+    margin-bottom: 1rem; }
+    .heads__text-header--1 {
+      margin-top: 4rem; }
+    .heads__text-header--2 {
+      margin-top: 4rem; }
 
 .price {
   background-image: url(../../img/background/price-background.png);
