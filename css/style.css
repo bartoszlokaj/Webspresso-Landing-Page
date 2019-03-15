@@ -407,13 +407,16 @@ body {
     border: none;
     border-top: 3px solid #82358b;
     padding: 2rem;
+    outline: none;
     cursor: pointer; }
     .collapsible__btn:last-child {
       border-bottom: 3px solid #82358b; }
   .collapsible__content {
     color: #04859f;
     padding: 2rem;
-    text-align: justify; }
+    text-align: justify;
+    display: none;
+    overflow: hidden; }
     .collapsible__content h4 {
       margin-top: 1rem; }
 

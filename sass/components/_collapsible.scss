@@ -12,6 +12,7 @@
     border: none;
     border-top: 3px solid $color-tertiary-purple;
     padding: 2rem;
+    outline: none;
     cursor: pointer;
 
     &:last-child {
@@ -23,6 +24,9 @@
     color: $color-primary-blue;
     padding: 2rem;
     text-align: justify;
+    display: none;
+    overflow: hidden;
+    
     h4 {
       margin-top: 1rem;
     }
