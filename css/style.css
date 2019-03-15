@@ -187,6 +187,11 @@ body {
   text-align: center;
   color: #82358b; }
 
+.header__small {
+  color: #04859f;
+  text-transform: uppercase;
+  margin-bottom: 1rem; }
+
 .collapsible__btn {
   font-size: inherit;
   font-family: inherit;
@@ -393,10 +398,11 @@ body {
   max-width: 100rem;
   font-weight: bold;
   text-align: justify;
-  margin: auto; }
+  margin: 16rem auto 16rem auto; }
   .collapsible__btn {
     width: 100%;
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
     background-color: #f4f4f4;
     border: none;
     border-top: 3px solid #82358b;
@@ -405,7 +411,11 @@ body {
     .collapsible__btn:last-child {
       border-bottom: 3px solid #82358b; }
   .collapsible__content {
-    color: #04859f; }
+    color: #04859f;
+    padding: 2rem;
+    text-align: justify; }
+    .collapsible__content h4 {
+      margin-top: 1rem; }
 
 .about {
   margin-bottom: 16rem; }
@@ -660,14 +670,10 @@ body {
       .heads__text {
         width: 33.3rem;
         font-size: 3.3rem; } }
-  .heads__text-header {
-    color: #04859f;
-    text-transform: uppercase;
-    margin-bottom: 1rem; }
-    .heads__text-header--1 {
-      margin-top: 4rem; }
-    .heads__text-header--2 {
-      margin-top: 4rem; }
+  .heads__text-header--1 {
+    margin-top: 4rem; }
+  .heads__text-header--2 {
+    margin-top: 4rem; }
 
 .price {
   background-image: url(../../img/background/price-background.png);
