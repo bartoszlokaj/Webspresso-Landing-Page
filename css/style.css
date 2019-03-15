@@ -431,6 +431,8 @@ body {
   .collapsible__arrow {
     transform: rotateX(0deg);
     transition: transform 0.2s ease; }
+    .collapsible__arrow--animated {
+      transform: rotateX(180deg); }
 
 .active {
   background-color: #fff;
