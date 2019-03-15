@@ -399,6 +399,8 @@ body {
   font-weight: bold;
   text-align: justify;
   margin: 16rem auto 16rem auto; }
+  .collapsible:last-child {
+    border-bottom: 3px solid #82358b; }
   .collapsible__btn {
     width: 100%;
     display: flex;
@@ -409,8 +411,6 @@ body {
     padding: 2rem;
     outline: none;
     cursor: pointer; }
-    .collapsible__btn:last-child {
-      border-bottom: 3px solid #82358b; }
     .collapsible__btn:hover {
       background-color: #fff; }
   .collapsible__content {
@@ -421,12 +421,16 @@ body {
     display: none;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-out; }
+    transition: max-height 0.2s ease-in-out; }
     .collapsible__content h4 {
       margin-top: 1rem; }
+  .collapsible__arrow {
+    transform: rotateX(0deg);
+    transition: transform 0.2s ease; }
 
 .active {
-  background-color: #fff; }
+  background-color: #fff;
+  transform: rotateX(0deg); }
 
 .about {
   margin-bottom: 16rem; }
