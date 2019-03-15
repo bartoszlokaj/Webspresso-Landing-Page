@@ -400,6 +400,27 @@ body {
         flex-direction: column;
         align-items: center; } }
 
+.faq {
+  background-image: url(../img/background/faq-background.png);
+  background-size: cover;
+  background-position: center; }
+  .faq__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    margin: auto; }
+  @media (max-width: 37.5em) {
+    .faq__logo {
+      margin-top: 16rem; } }
+  @media (max-width: 37.5em) {
+    .faq__img {
+      height: 20.1rem; } }
+  @media (max-width: 23.4em) {
+    .faq__img {
+      height: 26.8rem; } }
+
 .fast {
   background-image: url(../img/background/fast-background.png);
   background-size: cover;

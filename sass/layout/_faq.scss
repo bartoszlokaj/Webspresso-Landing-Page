@@ -1,0 +1,30 @@
+.faq {
+  background-image: url(../img/background/faq-background.png);
+  background-size: cover;
+  background-position: center;
+
+  &__row {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    max-width: 100rem;
+    margin: auto;
+  }
+
+  &__logo {
+    @include respond(phablet) {
+      margin-top: $margin-big;
+    }
+  }
+
+  &__img {
+    @include respond(phablet) {
+      height: 20.1rem;
+    }
+
+    @include respond(phone) {
+      height: 26.8rem;
+    }
+  }
+}
