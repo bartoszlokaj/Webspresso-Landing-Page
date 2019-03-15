@@ -1,0 +1,25 @@
+.collapsible {
+  max-width: 100rem;
+  font-weight: bold;
+  text-align: justify;
+  margin: auto;
+
+  &__btn {
+    width: 100%;
+    
+    text-align: left;
+    background-color: $color-light-gray;
+    border: none;
+    border-top: 3px solid $color-tertiary-purple;
+    padding: 2rem;
+    cursor: pointer;
+
+    &:last-child {
+      border-bottom: 3px solid $color-tertiary-purple;
+    }
+  }
+
+  &__content {
+    color: $color-primary-blue;
+  }
+}

@@ -168,3 +168,11 @@ body {
   text-align: center;
   color: $color-tertiary-purple;
 }
+
+.collapsible__btn {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: bold;
+  color: $color-tertiary-purple;
+  text-transform: uppercase;
+}

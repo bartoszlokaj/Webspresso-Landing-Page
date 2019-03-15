@@ -187,6 +187,13 @@ body {
   text-align: center;
   color: #82358b; }
 
+.collapsible__btn {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: bold;
+  color: #82358b;
+  text-transform: uppercase; }
+
 .btn {
   font-weight: medium;
   line-height: 1.3;
@@ -381,6 +388,24 @@ body {
     .about-icon--4 {
       margin-top: -2rem;
       margin-bottom: -5rem; } }
+
+.collapsible {
+  max-width: 100rem;
+  font-weight: bold;
+  text-align: justify;
+  margin: auto; }
+  .collapsible__btn {
+    width: 100%;
+    text-align: left;
+    background-color: #f4f4f4;
+    border: none;
+    border-top: 3px solid #82358b;
+    padding: 2rem;
+    cursor: pointer; }
+    .collapsible__btn:last-child {
+      border-bottom: 3px solid #82358b; }
+  .collapsible__content {
+    color: #04859f; }
 
 .about {
   margin-bottom: 16rem; }
