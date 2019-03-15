@@ -24,15 +24,22 @@
     }
   }
 
+  &__wrapper {
+    display: block;
+    max-height: 9999px;
+    overflow: hidden;
+    &--animated {
+      transition: max-height 1s ease-in-out;
+    }
+  }
+
   &__content {
     color: $color-primary-blue;
     background-color: $color-white;
     padding: 2rem;
     text-align: justify;
-    display: none;
-    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out;
+    background-color: $color-white;
 
     h4 {
       margin-top: 1rem;

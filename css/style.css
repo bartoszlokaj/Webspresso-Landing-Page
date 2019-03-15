@@ -413,15 +413,19 @@ body {
     cursor: pointer; }
     .collapsible__btn:hover {
       background-color: #fff; }
+  .collapsible__wrapper {
+    display: block;
+    max-height: 9999px;
+    overflow: hidden; }
+    .collapsible__wrapper--animated {
+      transition: max-height 1s ease-in-out; }
   .collapsible__content {
     color: #04859f;
     background-color: #fff;
     padding: 2rem;
     text-align: justify;
-    display: none;
-    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.2s ease-in-out; }
+    background-color: #fff; }
     .collapsible__content h4 {
       margin-top: 1rem; }
   .collapsible__arrow {
