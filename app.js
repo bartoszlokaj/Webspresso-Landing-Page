@@ -1,8 +1,8 @@
-let coll = document.querySelector('.collapsible');
+let coll = document.querySelectorAll(".collapsible__btn");
 let i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
+  coll[i].addEventListener("click", function(){
     this.classList.toggle("active");
     let content = this.nextElementSibling;
     if (content.style.display === "block") {
@@ -12,3 +12,4 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+

@@ -8,7 +8,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: $color-light-gray;
+    background-color: inherit;
     border: none;
     border-top: 3px solid $color-tertiary-purple;
     padding: 2rem;
@@ -18,17 +18,28 @@
     &:last-child {
       border-bottom: 3px solid $color-tertiary-purple;
     }
+
+    &:hover {
+      background-color: $color-white;
+    }
   }
 
   &__content {
     color: $color-primary-blue;
+    background-color: $color-white;
     padding: 2rem;
     text-align: justify;
     display: none;
+    max-height: 0;
     overflow: hidden;
-    
+    transition: max-height 0.2s ease-out;
+
     h4 {
       margin-top: 1rem;
     }
   }
+}
+
+.active {
+  background-color: $color-white;
 }
