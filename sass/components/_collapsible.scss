@@ -12,6 +12,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background-color: inherit;
     border: none;
     border-top: 3px solid $color-tertiary-purple;
@@ -29,7 +30,7 @@
     max-height: 9999px;
     overflow: hidden;
     &--animated {
-      transition: max-height 1s ease-in-out;
+      transition: max-height .2s ease-in-out;
     }
   }
 

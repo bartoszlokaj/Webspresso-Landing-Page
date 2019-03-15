@@ -141,7 +141,8 @@ body {
     .header-secondary {
       font-size: 7.8rem; } }
   .header-secondary--purple {
-    color: #82358b; }
+    color: #82358b;
+    margin: 0; }
   .header-secondary--aside {
     width: 47rem;
     text-align: left;
@@ -405,6 +406,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-content: center;
     background-color: inherit;
     border: none;
     border-top: 3px solid #82358b;
@@ -418,7 +420,7 @@ body {
     max-height: 9999px;
     overflow: hidden; }
     .collapsible__wrapper--animated {
-      transition: max-height 1s ease-in-out; }
+      transition: max-height .2s ease-in-out; }
   .collapsible__content {
     color: #04859f;
     background-color: #fff;
@@ -457,9 +459,7 @@ body {
         align-items: center; } }
 
 .faq {
-  background-image: url(../img/background/faq-background.png);
-  background-size: cover;
-  background-position: center; }
+  padding: 16rem 0 8rem 0; }
   .faq__row {
     display: flex;
     justify-content: space-around;
@@ -643,7 +643,7 @@ body {
 
 .heads {
   background-color: #fff;
-  padding-top: 16rem; }
+  padding: 16rem 0 8rem 0; }
   @media (max-width: 56.25em) {
     .heads {
       padding-top: 37rem; } }
@@ -751,8 +751,7 @@ body {
 
 .speed-test {
   background-color: #f4f4f4;
-  height: 100vh;
-  margin-top: -16rem; }
+  margin: -16rem auto 10rem auto; }
   .speed-test__row {
     max-width: 120rem;
     margin: 16rem auto 0 auto;

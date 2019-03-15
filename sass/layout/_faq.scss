@@ -1,7 +1,5 @@
 .faq {
-  background-image: url(../img/background/faq-background.png);
-  background-size: cover;
-  background-position: center;
+  padding: $margin-big 0 $margin-small 0;
 
   &__row {
     display: flex;

@@ -1,6 +1,6 @@
 .heads {
   background-color: $color-white;
-  padding-top: 16rem;
+  padding: 16rem 0 8rem 0;
 
   @include respond(tab-port) {
     padding-top: 37rem;
