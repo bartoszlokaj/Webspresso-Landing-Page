@@ -5,12 +5,22 @@
   margin-top: -17rem;
   margin-bottom: 0rem;
   padding: 12rem 0 24rem 0;
+  
+  @include respond(laptop) {
+    margin-top: -23rem;
+    padding: 22rem 0 37rem 0;
+  }
+
+  @include respond(tab-port) {
+    margin-top: -43rem;
+    padding: 39rem 0 37rem 0;
+  }
 
   @include respond(phablet){
-    padding-bottom: $margin-big;
     background-image: none;
     background-color: $color-light-gray;
     margin: 0 auto;
+    padding-top: $margin-small;
     padding-bottom: $margin-big;
   }
 

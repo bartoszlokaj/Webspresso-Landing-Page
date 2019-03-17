@@ -4,6 +4,12 @@
   background-position: center;
   padding: 32rem 0 27rem 0;
 
+  @include respond(phablet) {
+    background-image: none;
+    background-color: $color-light-gray;
+    padding: $margin-small 0 $margin-big 0;
+  }
+
   &__row {
     display: flex;
     justify-content: space-around;
@@ -15,7 +21,7 @@
 
   &__logo {
     @include respond(phablet) {
-      margin-top: $margin-big;
+      margin-top: $margin-small;
     }
   }
 
