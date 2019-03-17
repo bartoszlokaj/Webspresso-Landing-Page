@@ -54,7 +54,7 @@ html {
 
 body {
   box-sizing: border-box;
-  background-color: #f4f4f4; }
+  background-color: #fff; }
 
 @font-face {
   font-family: "BloggerSans";
@@ -221,6 +221,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center; }
+    .btn__text--top {
+      margin-top: 1rem; }
   .btn--big {
     border-radius: 3.4rem;
     text-align: center;
@@ -407,6 +409,7 @@ body {
       margin-bottom: -5rem; } }
 
 .collapsible {
+  width: 90%;
   max-width: 100rem;
   font-weight: bold;
   text-align: justify;
@@ -492,13 +495,12 @@ body {
   background-image: url(../img/background/fast-background.png);
   background-size: cover;
   background-position: center;
-  min-height: 111vh;
   padding-top: 20rem; }
   @media (max-width: 37.5em) {
     .fast {
       background-image: none;
       background-color: #82358b;
-      padding-bottom: 20rem; } }
+      padding: 1rem 0 8rem 0; } }
   .fast__container {
     display: flex;
     flex-wrap: wrap; }
@@ -655,9 +657,6 @@ body {
 .heads {
   background-color: #fff;
   padding: 16rem 0 8rem 0; }
-  @media (max-width: 56.25em) {
-    .heads {
-      padding-top: 37rem; } }
   .heads__row {
     display: flex;
     justify-content: space-around;
@@ -712,16 +711,14 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin-top: -18.4rem;
-  padding: 14rem; }
-  @media (max-width: 56.25em) {
-    .price {
-      margin-top: -26rem; } }
+  padding: 14rem 14rem;
+  margin-top: -24rem; }
   @media (max-width: 37.5em) {
     .price {
       background-image: none;
       background-color: #ee7133;
-      padding: 5rem; } }
+      padding: 5rem 0 16rem 0;
+      margin-top: 0; } }
   .price .price-top {
     display: flex;
     justify-content: center;
@@ -761,11 +758,22 @@ body {
     margin-top: 10rem; }
 
 .speed-test {
-  background-color: #f4f4f4;
-  margin: -16rem auto 10rem auto; }
+  background-image: url(../../img/background/speed-test-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: -14rem;
+  margin-bottom: 0rem;
+  padding: 12rem 0 8rem 0; }
+  @media (max-width: 37.5em) {
+    .speed-test {
+      padding-bottom: 16rem;
+      background-image: none;
+      background-color: #f4f4f4;
+      margin: 0 auto;
+      padding-bottom: 16rem; } }
   .speed-test__row {
     max-width: 120rem;
-    margin: 16rem auto 0 auto;
+    margin: 10rem auto 0 auto;
     display: flex;
     justify-content: space-evenly;
     align-items: flex-end;
@@ -794,6 +802,3 @@ body {
   .speed-test__btn {
     display: flex;
     justify-content: center; }
-
-.dupa {
-  height: 60vh; }

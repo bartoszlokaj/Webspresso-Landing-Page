@@ -2,13 +2,12 @@
     background-image: url(../img/background/fast-background.png);
     background-size: cover;
     background-position: center;
-    min-height: 111vh;
     padding-top: 20rem;
 
   @include respond(phablet) {
     background-image: none;
     background-color: $color-tertiary-purple;
-    padding-bottom: 20rem;
+    padding: 1rem 0 $margin-small 0;
   }
 
   &__container {
