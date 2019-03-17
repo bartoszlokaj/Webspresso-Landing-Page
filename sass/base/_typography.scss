@@ -34,6 +34,11 @@ body {
   align-items: center;
   flex-wrap: wrap;
 
+  @include respond(tab-port) {
+    flex-direction: column;
+    margin-top: $margin-big;
+  }
+
   &__logo-img {
     @include respond(laptop) {
       height: 35rem;
