@@ -48,9 +48,6 @@ html {
   @media (max-width: 37.5em) {
     html {
       font-size: 37.5%; } }
-  @media (min-width: 112.5em) {
-    html {
-      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -141,6 +138,14 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 16rem auto 0 auto; }
+  .header-secondary__aside {
+    margin-left: 39rem; }
+    @media (max-width: 75em) {
+      .header-secondary__aside {
+        margin-left: 20re; } }
+    @media (max-width: 56.25em) {
+      .header-secondary__aside {
+        margin-left: 0; } }
   @media (max-width: 23.4em) {
     .header-secondary {
       font-size: 7.8rem; } }
@@ -220,9 +225,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; }
-    .btn__text--top {
-      margin-top: 1rem; }
+    justify-content: center;
+    margin-top: 1rem; }
   .btn--big {
     border-radius: 3.4rem;
     text-align: center;
@@ -473,7 +477,10 @@ body {
         align-items: center; } }
 
 .faq {
-  padding: 16rem 0 8rem 0; }
+  background-image: url(../img/background/faq-background.png);
+  background-size: cover;
+  background-position: center;
+  padding: 32rem 0 27rem 0; }
   .faq__row {
     display: flex;
     justify-content: space-around;
@@ -495,7 +502,7 @@ body {
   background-image: url(../img/background/fast-background.png);
   background-size: cover;
   background-position: center;
-  padding-top: 20rem; }
+  padding: 17rem 0 20rem 0; }
   @media (max-width: 37.5em) {
     .fast {
       background-image: none;
@@ -512,8 +519,7 @@ body {
       font-size: 28px;
       font-weight: bold;
       list-style-type: none;
-      margin-left: 39rem;
-      margin-top: 10rem; }
+      margin: 10rem 0 0 39rem; }
       @media (max-width: 75em) {
         .fast__container .fast-list {
           margin-left: 20rem; } }
@@ -593,7 +599,7 @@ body {
   background-position: center;
   font-weight: bold;
   padding: 3.8rem 4.5rem;
-  height: 127.1rem; }
+  height: 132rem; }
   @media (max-width: 26.6em) {
     .header {
       background-image: url(../img/background/header-background-small.jpg);
@@ -656,7 +662,7 @@ body {
 
 .heads {
   background-color: #fff;
-  padding: 16rem 0 8rem 0; }
+  padding: 16rem 0 0 0; }
   .heads__row {
     display: flex;
     justify-content: space-around;
@@ -711,7 +717,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 14rem 14rem;
+  padding: 16rem 14rem;
   margin-top: -24rem; }
   @media (max-width: 37.5em) {
     .price {
@@ -761,9 +767,9 @@ body {
   background-image: url(../../img/background/speed-test-background.png);
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -14rem;
+  margin-top: -17rem;
   margin-bottom: 0rem;
-  padding: 12rem 0 8rem 0; }
+  padding: 12rem 0 24rem 0; }
   @media (max-width: 37.5em) {
     .speed-test {
       padding-bottom: 16rem;

@@ -110,6 +110,18 @@ body {
   text-align: center;
   margin: $margin-big auto 0 auto;
 
+  &__aside {
+    margin-left: 39rem;
+
+    @include respond(tab-land) {
+      margin-left: 20re;
+    }
+
+    @include respond(tab-port) {
+      margin-left: 0;
+    }
+  }
+
   @include respond(phone) {
     font-size: 7.8rem;
   }

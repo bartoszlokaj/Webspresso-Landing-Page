@@ -2,9 +2,9 @@
   background-image: url(../../img/background/speed-test-background.png);
   background-repeat: no-repeat;
   background-position: center;
-  margin-top: -14rem;
+  margin-top: -17rem;
   margin-bottom: 0rem;
-  padding: 12rem 0 8rem 0;
+  padding: 12rem 0 24rem 0;
 
   @include respond(phablet){
     padding-bottom: $margin-big;
