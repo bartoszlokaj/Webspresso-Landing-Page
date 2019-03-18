@@ -50,4 +50,14 @@
     .address {
         color: $color-tertiary-purple;
     }
+
+    &__bottom {
+        width: 100%;
+        padding: .5rem;
+        background-color: $color-light-gray;
+        color: $color-tertiary-purple;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        text-align: center;
+    }
 }

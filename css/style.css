@@ -652,6 +652,14 @@ body {
         align-items: center; }
   .footer .address {
     color: #82358b; }
+  .footer__bottom {
+    width: 100%;
+    padding: .5rem;
+    background-color: #f4f4f4;
+    color: #82358b;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center; }
 
 .header {
   background-image: url(../img/background/header-background.png);
