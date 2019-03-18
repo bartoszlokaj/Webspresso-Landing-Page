@@ -502,7 +502,7 @@ body {
     .faq {
       background-image: none;
       background-color: #f4f4f4;
-      padding: 8rem 0 16rem 0; } }
+      padding: 8rem 0 8rem 0; } }
   .faq__row {
     display: flex;
     justify-content: space-around;
@@ -626,26 +626,36 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 8rem auto; }
-  .footer__left {
+  @media (max-width: 37.5em) {
+    .footer__left {
+      order: 1;
+      margin-top: 8rem; } }
+  @media (max-width: 56.25em) {
+    .footer__left--map {
+      height: 38rem; } }
+  @media (max-width: 37.5em) {
+    .footer__left--map {
+      height: 50rem; } }
+  .footer__right {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-    .footer__left--top {
+    .footer__right--top {
       height: 50%; }
-    .footer__left--bottom {
+    .footer__right--bottom {
       height: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center; }
-      .footer__left--bottom .address {
+      .footer__right--bottom .address {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         margin: 4rem; }
-      .footer__left--bottom .contact {
+      .footer__right--bottom .contact {
         display: flex;
         flex-direction: column;
         justify-content: center;
