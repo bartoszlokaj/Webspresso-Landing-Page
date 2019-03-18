@@ -1,81 +1,81 @@
 .footer {
-    padding: $margin-small 0 0 0;
+  padding: $margin-small 0 0 0;
 
-    &__header {
-        display: flex;
+  &__header {
+    display: flex;
+  }
+
+  &__container {
+    max-width: 100rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: $margin-small auto;
+  }
+
+  &__left {
+    @include respond(phablet) {
+      order: 1;
+      margin-top: $margin-small;
     }
 
-    &__container {
-        max-width: 100rem;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: wrap;
-        margin: $margin-small auto;
+    &--map {
+      @include respond(tab-port) {
+        height: 38rem;
+      }
+
+      @include respond(phablet) {
+        height: 50rem;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &--top {
+      height: 50%;
     }
 
-    &__left {
+    &--bottom {
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-        @include respond(phablet) {
-            order: 1;
-            margin-top: $margin-small;
-        }
-
-        &--map {
-            @include respond(tab-port) {
-                height: 38rem;
-            }
-
-            @include respond(phablet) {
-                height: 50rem;
-            }
-        }
-    }
-
-    &__right {
+      .address {
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
-        &--top {
-            height: 50%;
-        }
+        align-items: center;
+        margin: 4rem;
+      }
 
-        &--bottom {
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .address {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                margin: 4rem;
-            }
-
-            .contact {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-            }
-        }
+      .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
     }
+  }
 
-    .address {
-        color: $color-tertiary-purple;
-    }
+  .address {
+    color: $color-tertiary-purple;
+  }
 
-    &__bottom {
-        width: 100%;
-        padding: .5rem;
-        background-color: $color-light-gray;
-        color: $color-tertiary-purple;
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        text-align: center;
-    }
+  &__bottom {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: $color-light-gray;
+    color: $color-tertiary-purple;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
