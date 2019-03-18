@@ -168,6 +168,9 @@ body {
     @media (max-width: 37.5em) {
       .header-secondary--aside {
         margin-top: 8rem; } }
+  .header-secondary--footer {
+    margin: 0 auto;
+    text-align: center; }
 
 .header-price {
   font-size: 93px;
@@ -597,6 +600,11 @@ body {
             height: 36rem;
             margin-left: -6rem;
             margin-bottom: 8rem; } }
+
+.footer {
+  padding: 8rem; }
+  .footer__header {
+    display: flex; }
 
 .header {
   background-image: url(../img/background/header-background.png);

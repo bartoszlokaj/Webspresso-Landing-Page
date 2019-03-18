@@ -151,6 +151,11 @@ body {
       margin-top: $margin-small;
     }
   }
+
+  &--footer {
+    margin:0 auto;
+    text-align: center;
+  }
 }
 
 .header-price {
