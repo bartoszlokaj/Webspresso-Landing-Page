@@ -151,11 +151,6 @@ body {
       margin-top: $margin-small;
     }
   }
-
-  &--footer {
-    margin:0 auto;
-    text-align: center;
-  }
 }
 
 .header-price {
@@ -178,6 +173,11 @@ body {
 
   @include respond(tab-port) {
     text-align: center;
+  }
+
+  &--footer {
+    text-align: center;
+    margin: 0 auto;
   }
 }
 

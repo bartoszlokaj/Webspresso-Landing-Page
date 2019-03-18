@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: $color-tertiary-purple;
 
   &:link,
   &:visited {
@@ -12,6 +13,23 @@
     text-decoration: none;
     outline: none;
     cursor: pointer;
+  }
+
+  &__link {
+    text-transform: lowercase;
+    font-weight: medium;
+    text-decoration: none;
+    outline: none;
+    color: $color-tertiary-purple;
+    cursor: pointer;
+    &:link,
+    &:visited {
+      text-transform: lowercase;
+      font-weight: medium;
+      text-decoration: none;
+      outline: none;
+      cursor: pointer;
+    }
   }
 
   &__text {

@@ -1,7 +1,53 @@
 .footer {
-    padding: $margin-small;
+    padding: $margin-small 0 0 0;
 
     &__header {
         display: flex;
+    }
+
+    &__container {
+        max-width: 100rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: $margin-small auto;
+    }
+
+    &__left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        &--top {
+            height: 50%;
+        }
+
+        &--bottom {
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .address {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: 4rem;
+            }
+
+            .contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+    .address {
+        color: $color-tertiary-purple;
     }
 }
