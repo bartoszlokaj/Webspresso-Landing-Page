@@ -6,12 +6,25 @@
   position: relative;
   font-size: 25px;
 
+  &--1 {
+    @include respond(phablet) {
+      margin-bottom: 3rem;
+    }
+  }
+
+  &--2 {
+    @include respond(phablet) {
+      margin-bottom: 4rem;
+    }
+  }
+
   @include respond(tab-port) {
     height: 44rem;
   }
 
   @include respond(phablet) {
     height: 58rem;
+    width: unset;
   }
   
   &::after {
@@ -49,9 +62,10 @@
     justify-content: center;
     border-radius: 2px;
     position: relative;
+    margin: 0 auto;
 
     @include respond(phablet) {
-      width: none;
+      width: unset;
     }
   }
 
