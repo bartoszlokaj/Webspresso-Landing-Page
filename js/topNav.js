@@ -1,8 +1,7 @@
 
 
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    console.log('cześć');
+    let x = document.querySelector(".header__list");
     if (x.className === "header__list") {
       x.className += " responsive";
     } else {
