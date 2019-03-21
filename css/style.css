@@ -17,13 +17,37 @@
 @keyframes fadeIn {
   0% {
     display: none;
-    opacity: 0; }
+    opacity: 0;
+    width: 0px; }
   1% {
+    display: block;
+    opacity: 0;
+    width: 1px; }
+  70% {
+    width: 85%; }
+  100% {
+    display: block;
+    opacity: 1;
+    width: 80%; } }
+
+@keyframes fromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20rem); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes fadeOut {
+  0% {
+    display: block;
+    opacity: 1; }
+  99% {
     display: block;
     opacity: 0; }
   100% {
-    display: block;
-    opacity: 1; } }
+    display: none;
+    opacity: 0; } }
 
 /*
 0-360px:      Phone
@@ -697,7 +721,8 @@ body {
   font-weight: bold;
   padding: 3.8rem 4.5rem;
   height: 132rem;
-  position: relative; }
+  position: relative;
+  backface-visibility: hidden; }
   @media (max-width: 26.6em) {
     .header {
       background-image: url(../img/background/header-background-small.jpg);
@@ -754,6 +779,7 @@ body {
     padding: 1rem 1.6rem;
     display: block;
     cursor: pointer;
+    animation: fromRight .2s ease;
     transition: all 0.2s ease; }
   .header__list-link:hover {
     color: #ee7133; }
@@ -795,8 +821,7 @@ body {
     text-align: right;
     background: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.75);
-    z-index: 9999;
-    transition: opacity .2s ease; } }
+    z-index: 9999; } }
 
 @media (max-width: 37.5em) {
   .responsive {
@@ -805,6 +830,9 @@ body {
 @media (max-width: 23.4em) {
   .responsive {
     width: 98%; } }
+
+.responsive--animated {
+  animation: fadeOut 1s ease; }
 
 .heads {
   background-color: #fff;
