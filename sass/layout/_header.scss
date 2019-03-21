@@ -45,7 +45,6 @@
   }
 
   &__list {
-    animation: fadeOut 2s ease;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -130,21 +129,25 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 32%;
-    min-width: 54rem;
+    height: 38%;
+    width: 80%;
     @include absoluteCenter;
-    top: 24%;
+    top: 27%;
     font-size: 3.5rem;
     border-radius: 3px;
     text-align: right;
-    background: rgba(0, 0, 0, 0.6);
-    box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.75);
+    background: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.75);
     z-index: 9999;
     transition: opacity .2s ease;
   }
 
-  @include respond(phoneS) {
-    min-width: 51rem;
+  @include respond(phablet) {
+    width: 90%;
+  }
+
+  @include respond(phone) {
+    width: 98%;
   }
 }
 
