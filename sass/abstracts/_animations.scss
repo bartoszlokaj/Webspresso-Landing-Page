@@ -25,3 +25,37 @@
       transform: translateY(-.5rem);
   }
 }
+
+@keyframes fadeIn {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+0% {
+    display: block;
+    opacity: 1;
+}
+
+10% {
+    display: block;
+    opacity: 0.9;
+}
+
+100% {
+    display: none;
+    opacity: 0;
+}
+}

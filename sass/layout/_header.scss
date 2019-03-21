@@ -45,10 +45,10 @@
   }
 
   &__list {
+    animation: fadeOut 2s ease;
     list-style-type: none;
     margin: 0;
     padding: 0;
-
     display: flex;
     justify-content: space-around;
 
@@ -64,6 +64,7 @@
     float: right;
     justify-self: end;
     font-size: 5rem;
+    transition: all 0.2s ease;
 
     &:active {
       color: $color-secondary-orange;
@@ -85,7 +86,7 @@
       padding: 1rem 1.6rem;
       display: block;
       cursor: pointer;
-      transition: all 0.3s;
+      transition: all 0.2s ease;
     }
     &:hover {
       color: $color-secondary-orange;
@@ -124,23 +125,29 @@
 
 .responsive {
   @include respond(tab-port) {
+    animation: fadeIn .2s ease;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 30%;
+    height: 32%;
     min-width: 54rem;
     @include absoluteCenter;
-    top: 22%;
+    top: 24%;
     font-size: 3.5rem;
     border-radius: 3px;
     text-align: right;
     background: rgba(0, 0, 0, 0.6);
     box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.75);
     z-index: 9999;
+    transition: opacity .2s ease;
   }
 
   @include respond(phoneS) {
     min-width: 51rem;
   }
 }
+
+// .responsive--animated {
+//   animation: fadeOut 2s ease;
+// }
