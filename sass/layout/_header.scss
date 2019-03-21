@@ -5,6 +5,7 @@
   font-weight: bold;
   padding: 3.8rem 4.5rem;
   height: 132rem;
+  position: relative;
 
   @include respond(phoneL) {
     background-image: url(../img/background/header-background-small.jpg);
@@ -35,6 +36,14 @@
     margin-top: 0.6rem;
   }
 
+  &__navigation {
+    @include respond(tab-port) {
+      width: 58%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
   &__list {
     list-style-type: none;
     margin: 0;
@@ -45,6 +54,26 @@
 
     @include respond(tab-port) {
       display: none;
+      position: relative;
+    }
+
+    
+  }
+
+
+  .icon {
+    color: white;
+    display: none;
+    float: right;
+    justify-self: end;
+    font-size: 5rem;
+
+    &:hover {
+      color: $color-secondary-orange;
+    }
+
+    @include respond(tab-port) {
+      display: block;
     }
   }
 
@@ -93,5 +122,24 @@
     .logo-facebook {
       height: 2.5rem;
     }
+  }
+}
+
+.responsive {
+  @include respond(tab-port) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    font-size: 3.5rem;
+    border-radius: 3px;
+    text-align: right;
+    background: rgba(0, 0, 0, .6);
+    box-shadow: 0 0 4rem -1rem rgba(0,0,0,0.75);
+    z-index: 9999;
   }
 }

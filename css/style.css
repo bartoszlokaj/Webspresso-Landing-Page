@@ -685,7 +685,8 @@ body {
   background-position: center;
   font-weight: bold;
   padding: 3.8rem 4.5rem;
-  height: 132rem; }
+  height: 132rem;
+  position: relative; }
   @media (max-width: 26.6em) {
     .header {
       background-image: url(../img/background/header-background-small.jpg);
@@ -706,6 +707,11 @@ body {
       height: 5rem; } }
   .header__logo-box {
     margin-top: 0.6rem; }
+  @media (max-width: 56.25em) {
+    .header__navigation {
+      width: 58%;
+      display: flex;
+      justify-content: flex-end; } }
   .header__list {
     list-style-type: none;
     margin: 0;
@@ -714,7 +720,19 @@ body {
     justify-content: space-around; }
     @media (max-width: 56.25em) {
       .header__list {
-        display: none; } }
+        display: none;
+        position: relative; } }
+  .header .icon {
+    color: white;
+    display: none;
+    float: right;
+    justify-self: end;
+    font-size: 5rem; }
+    .header .icon:hover {
+      color: #ee7133; }
+    @media (max-width: 56.25em) {
+      .header .icon {
+        display: block; } }
   .header__list-link:link, .header__list-link:visited {
     font-weight: 600;
     text-transform: uppercase;
@@ -745,6 +763,23 @@ body {
         transform: scale(1.1); }
     .header__socials .logo-facebook {
       height: 2.5rem; }
+
+@media (max-width: 56.25em) {
+  .responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 30%;
+    position: absolute;
+    top: 10%;
+    right: 3%;
+    font-size: 3.5rem;
+    border-radius: 3px;
+    text-align: right;
+    background: rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0 4rem -1rem rgba(0, 0, 0, 0.75);
+    z-index: 9999; } }
 
 .heads {
   background-color: #fff;
