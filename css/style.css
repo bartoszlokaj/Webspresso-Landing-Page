@@ -473,9 +473,6 @@ body {
     text-align: center;
     line-height: 1.4;
     padding: 0 2.4rem; }
-    .about-icon__text--blue {
-      color: #04859f;
-      display: inline-block; }
     .about-icon__text--purple {
       display: inline-block; }
     @media (max-width: 37.5em) {
