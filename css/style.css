@@ -438,10 +438,14 @@ body {
   .about-icon--last::after {
     content: ""; }
   .about-icon:hover {
-    cursor: pointer;
     transform: scale(1.03);
     background-color: #fff;
     box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3); }
+    @media (max-width: 56.25em) {
+      .about-icon:hover {
+        transform: none;
+        background-color: inherit;
+        box-shadow: none; } }
   .about-icon:hover::after {
     animation: moveInRight 0.8s 0.2s; }
   .about-icon__img-box {
