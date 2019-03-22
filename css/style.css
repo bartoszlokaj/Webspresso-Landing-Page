@@ -373,6 +373,10 @@ body {
     color: #82358b;
     background: #fff;
     border: 5px solid #82358b; }
+    .btn--purple:hover {
+      background-color: #82358b;
+      color: #fff;
+      border: 5px solid #82358b; }
     @media (max-width: 37.5em) {
       .btn--purple {
         width: 46rem; } }

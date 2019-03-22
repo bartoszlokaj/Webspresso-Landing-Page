@@ -157,6 +157,12 @@
     background: $color-white;
     border: 5px solid $color-tertiary-purple;
 
+    &:hover {
+      background-color: $color-tertiary-purple;
+      color: $color-white;
+      border: 5px solid $color-tertiary-purple;
+    }
+
     @include respond(phablet) {
       width: 46rem;
     }
