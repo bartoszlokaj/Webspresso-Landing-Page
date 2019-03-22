@@ -64,6 +64,7 @@
     float: right;
     justify-self: end;
     font-size: 5rem;
+    -webkit-tap-highlight-color: transparent;
     transition: all 0.2s ease;
 
     &:active {
@@ -88,6 +89,7 @@
       cursor: pointer;
       animation: fromRight .2s ease;
       transition: all 0.2s ease;
+      -webkit-tap-highlight-color: transparent;
     }
     &:hover {
       color: $color-secondary-orange;

@@ -819,6 +819,7 @@ body {
     float: right;
     justify-self: end;
     font-size: 5rem;
+    -webkit-tap-highlight-color: transparent;
     transition: all 0.2s ease; }
     .header .icon:active {
       color: #ee7133; }
@@ -835,7 +836,8 @@ body {
     display: block;
     cursor: pointer;
     animation: fromRight .2s ease;
-    transition: all 0.2s ease; }
+    transition: all 0.2s ease;
+    -webkit-tap-highlight-color: transparent; }
   .header__list-link:hover {
     color: #ee7133; }
   @media (max-width: 90em) {
