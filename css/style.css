@@ -891,7 +891,7 @@ body {
     margin-top: 3.6rem; }
 
 .price {
-  background-image: url(../../img/background/price-background.png);
+  background-image: url(../img/background/price-background.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -942,7 +942,7 @@ body {
     margin-top: 10rem; }
 
 .speed-test {
-  background-image: url(../../img/background/speed-test-background.png);
+  background-image: url(../img/background/speed-test-background.png);
   background-repeat: no-repeat;
   background-position: center;
   margin-top: -17rem;
