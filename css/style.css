@@ -553,6 +553,11 @@ body {
   background-color: #fff;
   transform: rotateX(0deg); }
 
+.link {
+  text-decoration: none;
+  color: #04859f;
+  display: inline-block; }
+
 .about {
   padding-top: 13rem; }
   .about__row {
