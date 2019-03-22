@@ -110,6 +110,10 @@ body {
   text-align: center;
   margin: $margin-big auto 0 auto;
 
+  @include respond(tab-port) {
+    margin: 30rem auto 0 auto;
+  }
+
   &__aside {
     margin-left: 39rem;
 

@@ -9,10 +9,13 @@
     margin-top: $margin-small;
 
     &:last-child {
-      margin-bottom: $margin-big;
 
       @include respond(tab-port) {
-        margin-top: 0;
+        margin: 0 0 -16rem 0;
+      }
+      
+      @include respond(phablet) {
+        margin: 0 0 16rem 0;
       }
     }
 
