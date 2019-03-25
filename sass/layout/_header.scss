@@ -133,10 +133,10 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 38%;
+    height: 36%;
     width: 80%;
     @include absoluteCenter;
-    top: 27%;
+    top: 25%;
     font-size: 3.5rem;
     border-radius: 3px;
     text-align: right;
@@ -150,7 +150,7 @@
   }
 
   @include respond(phone) {
-    width: 98%;
+    width: 96%;
   }
 }
 

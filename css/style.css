@@ -866,13 +866,13 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    height: 38%;
+    height: 36%;
     width: 80%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    top: 27%;
+    top: 25%;
     font-size: 3.5rem;
     border-radius: 3px;
     text-align: right;
@@ -886,7 +886,7 @@ body {
 
 @media (max-width: 23.4em) {
   .responsive {
-    width: 98%; } }
+    width: 96%; } }
 
 .responsive--animated {
   animation: fadeOut 1s ease; }
