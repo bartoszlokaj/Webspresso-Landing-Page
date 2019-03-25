@@ -11,7 +11,7 @@
   @include respond(phablet) {
     background-image: none;
     background-color: $color-light-gray;
-    padding: $margin-small 0 $margin-small 0;
+    padding: $margin-medium 0 $margin-small 0;
   }
 
   &__row {

@@ -605,7 +605,7 @@ body {
     .faq {
       background-image: none;
       background-color: #f4f4f4;
-      padding: 8rem 0 8rem 0; } }
+      padding: 12rem 0 8rem 0; } }
   .faq__row {
     display: flex;
     justify-content: space-around;
