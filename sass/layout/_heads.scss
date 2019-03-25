@@ -5,6 +5,10 @@
     padding: 0;
   }
 
+  @include respond(phablet) {
+    padding: 20rem 0 8rem 0;
+  }
+
   &__header {
     margin-top: -8rem;
   }

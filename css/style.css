@@ -896,6 +896,9 @@ body {
   @media (max-width: 56.25em) {
     .heads {
       padding: 0; } }
+  @media (max-width: 37.5em) {
+    .heads {
+      padding: 20rem 0 8rem 0; } }
   .heads__header {
     margin-top: -8rem; }
   .heads__row {
