@@ -145,12 +145,21 @@
     z-index: 9999;
   }
 
+  @include respond (tab-port) {
+    top:27%;
+    height: 39%;
+  }
+
   @include respond(phablet) {
     width: 90%;
   }
 
   @include respond(phone) {
     width: 96%;
+  }
+
+  @include respond(phoneS) {
+    width: 99%;
   }
 }
 

@@ -885,6 +885,11 @@ body {
     box-shadow: 0 0 4rem rgba(0, 0, 0, 0.75);
     z-index: 9999; } }
 
+@media (max-width: 56.25em) {
+  .responsive {
+    top: 27%;
+    height: 39%; } }
+
 @media (max-width: 37.5em) {
   .responsive {
     width: 90%; } }
@@ -892,6 +897,10 @@ body {
 @media (max-width: 23.4em) {
   .responsive {
     width: 96%; } }
+
+@media (max-width: 20em) {
+  .responsive {
+    width: 99%; } }
 
 .responsive--animated {
   animation: fadeOut 1s ease; }
