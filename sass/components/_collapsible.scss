@@ -4,6 +4,7 @@
   font-weight: bold;
   text-align: justify;
   margin: $margin-big auto $margin-big auto;
+  -webkit-tap-highlight-color: transparent;
 
   &:last-child {
     border-bottom: 3px solid $color-tertiary-purple;

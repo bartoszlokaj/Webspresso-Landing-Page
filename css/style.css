@@ -261,7 +261,8 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #82358b; }
+  color: #82358b;
+  -webkit-tap-highlight-color: transparent; }
   .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -516,7 +517,8 @@ body {
   max-width: 100rem;
   font-weight: bold;
   text-align: justify;
-  margin: 16rem auto 16rem auto; }
+  margin: 16rem auto 16rem auto;
+  -webkit-tap-highlight-color: transparent; }
   .collapsible:last-child {
     border-bottom: 3px solid #82358b; }
   .collapsible__btn {
