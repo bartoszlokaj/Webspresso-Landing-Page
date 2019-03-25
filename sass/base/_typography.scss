@@ -114,6 +114,10 @@ body {
     margin: 30rem auto 0 auto;
   }
 
+  @include respond(phablet) {
+    margin: 12rem auto 0 auto;
+  }
+
   &__aside {
     margin-left: 39rem;
 

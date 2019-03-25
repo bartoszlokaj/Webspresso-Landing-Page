@@ -180,6 +180,9 @@ body {
   @media (max-width: 56.25em) {
     .header-secondary {
       margin: 30rem auto 0 auto; } }
+  @media (max-width: 37.5em) {
+    .header-secondary {
+      margin: 12rem auto 0 auto; } }
   .header-secondary__aside {
     margin-left: 39rem; }
     @media (max-width: 75em) {
