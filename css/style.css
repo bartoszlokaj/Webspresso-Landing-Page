@@ -439,7 +439,7 @@ body {
     .about-icon--2 {
       padding: 2.6rem 0; } }
   .about-icon::after {
-    content: url(../../img/section_about/about-section-arrow.png);
+    content: url(../img/section_about/about-section-arrow.png);
     position: absolute;
     top: 28%;
     right: -7%; }
