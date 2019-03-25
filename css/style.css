@@ -924,7 +924,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: all .2s ease-in; }
+    transition: all .2s ease-in;
+    -webkit-tap-highlight-color: transparent; }
     @media (max-width: 90em) {
       .heads__card {
         width: 31.9rem;
@@ -934,7 +935,6 @@ body {
         width: 42.5rem;
         height: 75rem; } }
     .heads__card:hover {
-      cursor: pointer;
       transform: scale(1.03);
       background-color: #fff;
       box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3); }
